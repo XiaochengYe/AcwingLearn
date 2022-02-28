@@ -1,0 +1,1690 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter1 基础算法 · Gitbook Use</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yexiaocheng">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Acwing 算法基础课 chapter 2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://www.acwing.com/activity/content/11/">
+            
+                    
+                    算法基础课
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="Acwing 算法基础课 chapter 1.html">
+            
+                <a href="Acwing 算法基础课 chapter 1.html">
+            
+                    
+                    Chapter1 基础算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Acwing 算法基础课 chapter 2.html">
+            
+                <a href="Acwing 算法基础课 chapter 2.html">
+            
+                    
+                    Chapter2 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter1 基础算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x6A21;&#x677F;"><b>1.1. </b>&#x6A21;&#x677F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><b>1.1.1. </b>&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</a></li><li><span class="title-icon "></span><a href="#&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><b>1.1.2. </b>&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</a></li><li><span class="title-icon "></span><a href="#&#x6574;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><b>1.1.3. </b>&#x6574;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</a></li><li><span class="title-icon "></span><a href="#&#x6D6E;&#x70B9;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><b>1.1.4. </b>&#x6D6E;&#x70B9;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</a></li><li><span class="title-icon "></span><a href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;"><b>1.1.5. </b>&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;"><b>1.1.6. </b>&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x4F4E;&#x7CBE;&#x5EA6;"><b>1.1.7. </b>&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x4F4E;&#x7CBE;&#x5EA6;</a></li><li><span class="title-icon "></span><a href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x4EE5;&#x4F4E;&#x7CBE;&#x5EA6;"><b>1.1.8. </b>&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x4EE5;&#x4F4E;&#x7CBE;&#x5EA6;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x7EF4;&#x524D;&#x7F00;&#x548C;"><b>1.1.9. </b>&#x4E00;&#x7EF4;&#x524D;&#x7F00;&#x548C;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x7EF4;&#x524D;&#x7F00;&#x548C;"><b>1.1.10. </b>&#x4E8C;&#x7EF4;&#x524D;&#x7F00;&#x548C;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x7EF4;&#x5DEE;&#x5206;"><b>1.1.11. </b>&#x4E00;&#x7EF4;&#x5DEE;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x7EF4;&#x5DEE;&#x5206;"><b>1.1.12. </b>&#x4E8C;&#x7EF4;&#x5DEE;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x53CC;&#x6307;&#x9488;"><b>1.1.13. </b>&#x53CC;&#x6307;&#x9488;</a></li><li><span class="title-icon "></span><a href="#&#x4F4D;&#x8FD0;&#x7B97;"><b>1.1.14. </b>&#x4F4D;&#x8FD0;&#x7B97;</a></li><li><span class="title-icon "></span><a href="#&#x79BB;&#x6563;&#x5316;"><b>1.1.15. </b>&#x79BB;&#x6563;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x533A;&#x95F4;&#x5408;&#x5E76;"><b>1.1.16. </b>&#x533A;&#x95F4;&#x5408;&#x5E76;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9898;&#x76EE;"><b>1.2. </b>&#x9898;&#x76EE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5FEB;&#x901F;&#x6392;&#x5E8F;"><b>1.2.1. </b>&#x5FEB;&#x901F;&#x6392;&#x5E8F;</a></li><li><span class="title-icon "></span><a href="#&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><b>1.2.2. </b>&#x5F52;&#x5E76;&#x6392;&#x5E8F;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x5206;"><b>1.2.3. </b>&#x4E8C;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x9AD8;&#x7CBE;&#x5EA6;"><b>1.2.4. </b>&#x9AD8;&#x7CBE;&#x5EA6;</a></li><li><span class="title-icon "></span><a href="#&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;"><b>1.2.5. </b>&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x53CC;&#x6307;&#x9488;&#x7B97;&#x6CD5;"><b>1.2.6. </b>&#x53CC;&#x6307;&#x9488;&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x4F4D;&#x8FD0;&#x7B97;_1"><b>1.2.7. </b>&#x4F4D;&#x8FD0;&#x7B97;</a></li><li><span class="title-icon "></span><a href="#&#x79BB;&#x6563;&#x5316;_1"><b>1.2.8. </b>&#x79BB;&#x6563;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x533A;&#x95F4;&#x5408;&#x5E76;_1"><b>1.2.9. </b>&#x533A;&#x95F4;&#x5408;&#x5E76;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x6A21;&#x677F;"><a name="&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6A21;&#x677F;</h2>
+<h3 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><a name="&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</h3>
+<p>&#x2014;&#x2014;&#x5206;&#x6CBB;</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225414615-99406498.png" alt=""></p>
+<p>&#x2461;&#x7684;&#x5B9E;&#x73B0;</p>
+<p>1&#xFF09;&#x66B4;&#x529B;&#x2014;&#x2014;&#x5F00;&#x8F9F;&#x989D;&#x5916;&#x7A7A;&#x95F4;&#xFF1A;</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225454794-747346755.png" alt=""></p>
+<p>2&#xFF09;&#x53CC;&#x6307;&#x9488;  </p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">quick_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> q[], <span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (l &gt;= r) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">int</span> i = l - <span class="hljs-number">1</span>, j = r + <span class="hljs-number">1</span>, x = q[l];
+    <span class="hljs-keyword">while</span> (i &lt; j)
+    {
+        <span class="hljs-keyword">do</span> i ++ ; <span class="hljs-keyword">while</span> (q[i] &lt; x);
+        <span class="hljs-keyword">do</span> j -- ; <span class="hljs-keyword">while</span> (q[j] &gt; x);
+        <span class="hljs-keyword">if</span> (i &lt; j) swap(q[i], q[j]);
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">break</span>;
+    }
+    quick_sort(q, l, j), quick_sort(q, j + <span class="hljs-number">1</span>, r);
+}
+</code></pre>
+<h3 id="&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><a name="&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225506781-1597839794.png" alt=""></p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">merge_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> q[], <span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (l &gt;= r) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">int</span> mid = l + r &gt;&gt; <span class="hljs-number">1</span>;
+    merge_sort(q, l, mid);
+    merge_sort(q, mid + <span class="hljs-number">1</span>, r);
+
+    <span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>, i = l, j = mid + <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span> (i &lt;= mid &amp;&amp; j &lt;= r)
+        <span class="hljs-keyword">if</span> (q[i] &lt; q[j]) tmp[k ++ ] = q[i ++ ];
+        <span class="hljs-keyword">else</span> tmp[k ++ ] = q[j ++ ];
+
+    <span class="hljs-keyword">while</span> (i &lt;= mid) tmp[k ++ ] = q[i ++ ];
+    <span class="hljs-keyword">while</span> (j &lt;= r) tmp[k ++ ] = q[j ++ ];
+
+    <span class="hljs-keyword">for</span> (i = l, j = <span class="hljs-number">0</span>; i &lt;= r; i ++, j ++ ) q[i] = tmp[j];
+}
+</code></pre>
+<h3 id="&#x6574;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><a name="&#x6574;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x6574;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x6574;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225528019-1930741038.png" alt=""></p>
+<p>&#x6709;<strong>&#x5355;&#x8C03;&#x6027;</strong>&#x53EF;&#x4EE5;&#x4E8C;&#x5206;&#xFF0C;&#x9898;&#x76EE;&#x4E0D;&#x4E00;&#x5B9A;&#x6709;&#x5355;&#x8C03;&#x6027;&#x3002;&#x4E24;&#x8005;&#x65E0;&#x51B3;&#x5B9A;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x6027;&#x8D28;&#x53EF;&#x4EE5;&#x5C06;&#x6574;&#x4E2A;&#x533A;&#x95F4;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x4E8C;&#x5206;&#x53EF;&#x5BFB;&#x627E;&#x5212;&#x5206;&#x8FB9;&#x754C;&#x3002; </p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">check</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>{<span class="hljs-comment">/* ... */</span>} <span class="hljs-comment">// &#x68C0;&#x67E5;x&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x67D0;&#x79CD;&#x6027;&#x8D28;</span>
+</code></pre>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225542686-657322707.png" alt=""></p>
+<p>&#x6BCF;&#x6B21;<strong>&#x9009;&#x62E9;&#x7B54;&#x6848;&#x6240;&#x5728;</strong>&#x7684;&#x533A;&#x95F4;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x3002;&#x76F4;&#x81F3;&#x533A;&#x95F4;&#x957F;&#x5EA6;&#x4E3A;1&#x3002;&#xFF08;&#x4E8C;&#x5206;&#x4E00;&#x5B9A;&#x6709;&#x89E3;&#xFF0C;&#x9898;&#x76EE;&#x4E0D;&#x4E00;&#x5B9A;&#x6709;&#x89E3;&#x3002;&#x56E0;&#x4E3A;&#x5B9A;&#x4E49;&#x8FB9;&#x754C;&#xFF0C;&#x4E8C;&#x5206;&#x80FD;&#x591F;&#x7B97;&#x51FA;&#x4E2D;&#x70B9;&#x3002;&#xFF09;</p>
+<p>&#x533A;&#x95F4;[l, r]&#x88AB;&#x5212;&#x5206;&#x6210;[l, mid]&#x548C;[mid + 1, r]&#x65F6;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">bsearch_1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">while</span> (l &lt; r)
+    {
+        <span class="hljs-keyword">int</span> mid = l + r &gt;&gt; <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">if</span> (check(mid)) r = mid;    <span class="hljs-comment">// check()&#x5224;&#x65AD;mid&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6027;&#x8D28;</span>
+        <span class="hljs-keyword">else</span> l = mid + <span class="hljs-number">1</span>;
+    }
+    <span class="hljs-keyword">return</span> l;
+}
+</code></pre>
+<p>&#x533A;&#x95F4;[l, r]&#x88AB;&#x5212;&#x5206;&#x6210;[l, mid - 1]&#x548C;[mid, r]&#x65F6;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">bsearch_2</span><span class="hljs-params">(<span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">while</span> (l &lt; r)
+    {
+        <span class="hljs-keyword">int</span> mid = l + r + <span class="hljs-number">1</span> &gt;&gt; <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">if</span> (check(mid)) l = mid;
+        <span class="hljs-keyword">else</span> r = mid - <span class="hljs-number">1</span>;
+    }
+    <span class="hljs-keyword">return</span> l;
+}
+</code></pre>
+<h3 id="&#x6D6E;&#x70B9;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><a name="&#x6D6E;&#x70B9;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x6D6E;&#x70B9;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. &#x6D6E;&#x70B9;&#x6570;&#x4E8C;&#x5206;&#x7B97;&#x6CD5;&#x6A21;&#x677F;</h3>
+<p>&#x7CBE;&#x5EA6;&#x7ECF;&#x9A8C;&#x503C;  <strong>&#x591A;2</strong>&#xFF1A;</p>
+<p>&#x4FDD;&#x7559;6&#x4F4D;&#x5C0F;&#x6570;   r-l &gt; 1e-8</p>
+<p>&#x4FDD;&#x7559;4&#x4F4D;&#x5C0F;&#x6570;   r-l &gt; 1e-6</p>
+<p>&#x4FDD;&#x7559;5&#x4F4D;&#x5C0F;&#x6570;   r-l &gt; 1e-7</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">check</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{<span class="hljs-comment">/* ... */</span>} <span class="hljs-comment">// &#x68C0;&#x67E5;x&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x67D0;&#x79CD;&#x6027;&#x8D28;</span>
+</code></pre>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">bsearch_3</span><span class="hljs-params">(<span class="hljs-keyword">double</span> l, <span class="hljs-keyword">double</span> r)</span>
+</span>{
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> eps = <span class="hljs-number">1e-6</span>;   <span class="hljs-comment">// eps &#x8868;&#x793A;&#x7CBE;&#x5EA6;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x9898;&#x76EE;&#x5BF9;&#x7CBE;&#x5EA6;&#x7684;&#x8981;&#x6C42;</span>
+    <span class="hljs-keyword">while</span> (r - l &gt; eps)
+    {
+        <span class="hljs-keyword">double</span> mid = (l + r) / <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">if</span> (check(mid)) r = mid;
+        <span class="hljs-keyword">else</span> l = mid;
+    }
+    <span class="hljs-keyword">return</span> l;
+}
+</code></pre>
+<h3 id="&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;"><a name="&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. &#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225604388-410296783.png" alt=""></p>
+<p><strong>&#x5927;&#x6574;&#x6570;&#x5B58;&#x50A8;</strong></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225616459-441909897.png" alt=""></p>
+<p>&#x9006;&#x5B58;&#xFF0C;&#x8FDB;&#x4F4D;&#x3001;&#x9AD8;&#x4F4D;&#x8865;&#x6570;&#x66F4;&#x65B9;&#x4FBF;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225625411-1680669889.png" alt=""></p>
+<p><img src="https://img2020.cnblogs.com/blog/2335982/202112/2335982-20211231225745947-1294263317.png" alt=""></p>
+<p>// C = A + B, A &gt;= 0, B &gt;= 0</p>
+<pre><code class="lang-cpp"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; add(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;A, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;B)
+{
+    <span class="hljs-keyword">if</span> (A.size() &lt; B.size()) <span class="hljs-keyword">return</span> add(B, A);
+
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; C;
+    <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; A.size(); i ++ )
+    {
+        t += A[i];
+        <span class="hljs-keyword">if</span> (i &lt; B.size()) t += B[i];
+        C.push_back(t % <span class="hljs-number">10</span>);
+        t /= <span class="hljs-number">10</span>;
+    }
+
+    <span class="hljs-keyword">if</span> (t) C.push_back(t);
+    <span class="hljs-keyword">return</span> C;
+}
+</code></pre>
+<h3 id="&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;"><a name="&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. &#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;</h3>
+<p>(&#x9700;&#x8F6C;&#x4E3A; A&gt;=B)</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225839450-1060680784.png" alt=""></p>
+<p>&#x82E5;&#x6709;<strong>&#x8D1F;&#x6570;</strong>&#xFF0C;&#x5219;&#x4E24;&#x6570;&#x76F8;&#x51CF;A-B&#xFF0C;&#x4E00;&#x5B9A;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x6210;|A|-|B|&#x6216;|A|+|B|&#xFF0C;&#x5206;&#x60C5;&#x51B5;&#x8BA8;&#x8BBA;&#x3002;</p>
+<p>// C = A - B, &#x6EE1;&#x8DB3;A &gt;= B, A &gt;= 0, B &gt;= 0</p>
+<pre><code class="lang-cpp"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; sub(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;A, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;B)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; C;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, t = <span class="hljs-number">0</span>; i &lt; A.size(); i ++ )
+    {
+        t = A[i] - t;
+        <span class="hljs-keyword">if</span> (i &lt; B.size()) t -= B[i];
+        C.push_back((t + <span class="hljs-number">10</span>) % <span class="hljs-number">10</span>);
+        <span class="hljs-keyword">if</span> (t &lt; <span class="hljs-number">0</span>) t = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">else</span> t = <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-keyword">while</span> (C.size() &gt; <span class="hljs-number">1</span> &amp;&amp; C.back() == <span class="hljs-number">0</span>) C.pop_back();
+    <span class="hljs-keyword">return</span> C;
+}
+</code></pre>
+<h3 id="&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x4F4E;&#x7CBE;&#x5EA6;"><a name="&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x4F4E;&#x7CBE;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x4F4E;&#x7CBE;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.7. &#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x4F4E;&#x7CBE;&#x5EA6;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225853377-1314137168.png" alt=""></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225904106-821632396.png" alt=""></p>
+<p>// C = A * b, A &gt;= 0, b &gt; 0</p>
+<pre><code class="lang-cpp"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; mul(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;A, <span class="hljs-keyword">int</span> b)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; C;
+    <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; A.size() || t; i ++ )
+    {
+        <span class="hljs-keyword">if</span> (i &lt; A.size()) t += A[i] * b;
+        C.push_back(t % <span class="hljs-number">10</span>);
+        t /= <span class="hljs-number">10</span>;
+    }
+
+    <span class="hljs-keyword">return</span> C;
+}
+</code></pre>
+<p>&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x9AD8;&#x7CBE;&#x5EA6;&#x2014;&#x2014;<a href="https://leetcode-cn.com/problems/multiply-strings/" target="_blank">LeetCode43</a></p>
+<h3 id="&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x4EE5;&#x4F4E;&#x7CBE;&#x5EA6;"><a name="&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x4EE5;&#x4F4E;&#x7CBE;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x4EE5;&#x4F4E;&#x7CBE;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.8. &#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x4EE5;&#x4F4E;&#x7CBE;&#x5EA6;</h3>
+<p>&#x533A;&#x522B;&#x524D;&#x8005;&#xFF0C;&#x4ECE;&#x6700;&#x9AD8;&#x4F4D;&#x5F00;&#x59CB;&#x7B97;&#x3002;</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225928738-478677729.png" alt=""></p>
+<p>// A / b = C ... r, A &gt;= 0, b &gt; 0</p>
+<pre><code class="lang-cpp"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; div(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;A, <span class="hljs-keyword">int</span> b, <span class="hljs-keyword">int</span> &amp;r)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; C;
+    r = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = A.size() - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i -- )
+    {
+        r = r * <span class="hljs-number">10</span> + A[i];
+        C.push_back(r / b);
+        r %= b;
+    }
+    reverse(C.begin(), C.end());
+    <span class="hljs-keyword">while</span> (C.size() &gt; <span class="hljs-number">1</span> &amp;&amp; C.back() == <span class="hljs-number">0</span>) C.pop_back();
+    <span class="hljs-keyword">return</span> C;
+}
+</code></pre>
+<h3 id="&#x4E00;&#x7EF4;&#x524D;&#x7F00;&#x548C;"><a name="&#x4E00;&#x7EF4;&#x524D;&#x7F00;&#x548C;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x7EF4;&#x524D;&#x7F00;&#x548C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.9. &#x4E00;&#x7EF4;&#x524D;&#x7F00;&#x548C;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231225951690-602744695.png" alt=""></p>
+<pre><code class="lang-cpp">S[i] = a[<span class="hljs-number">1</span>] + a[<span class="hljs-number">2</span>] + ... a[i]
+a[l] + ... + a[r] = S[r] - S[l - <span class="hljs-number">1</span>]
+</code></pre>
+<h3 id="&#x4E8C;&#x7EF4;&#x524D;&#x7F00;&#x548C;"><a name="&#x4E8C;&#x7EF4;&#x524D;&#x7F00;&#x548C;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x7EF4;&#x524D;&#x7F00;&#x548C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.10. &#x4E8C;&#x7EF4;&#x524D;&#x7F00;&#x548C;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230005489-1633726927.png" alt=""></p>
+<pre><code class="lang-cpp">S[i, j] = &#x7B2C;i&#x884C;j&#x5217;&#x683C;&#x5B50;&#x5DE6;&#x4E0A;&#x90E8;&#x5206;&#x6240;&#x6709;&#x5143;&#x7D20;&#x7684;&#x548C;
+&#x4EE5;(x1, y1)&#x4E3A;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;(x2, y2)&#x4E3A;&#x53F3;&#x4E0B;&#x89D2;&#x7684;&#x5B50;&#x77E9;&#x9635;&#x7684;&#x548C;&#x4E3A; S[x2, y2] - S[x1 - <span class="hljs-number">1</span>, y2] - S[x2, y1 - <span class="hljs-number">1</span>] + S[x1 - <span class="hljs-number">1</span>, y1 - <span class="hljs-number">1</span>]
+</code></pre>
+<h3 id="&#x4E00;&#x7EF4;&#x5DEE;&#x5206;"><a name="&#x4E00;&#x7EF4;&#x5DEE;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x7EF4;&#x5DEE;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.11. &#x4E00;&#x7EF4;&#x5DEE;&#x5206;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230021806-155619005.png" alt=""></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230027349-2128206738.png" alt=""></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230033769-1350180452.png" alt=""></p>
+<p>&#x5B8C;&#x6210;+c &#x2014;&#x2014;&gt; &#x53EA;&#x8981;O(1)&#x65F6;&#x95F4;&#x53BB;&#x7ED9;&#x539F;&#x6570;&#x7EC4;&#x4E2D;&#x95F4;&#x67D0;&#x4E00;&#x4E2A;&#x8FDE;&#x7EED;&#x533A;&#x95F4;&#x5168;&#x52A0;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x503C;&#x3002;</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230051278-1158349634.png" alt=""></p>
+<pre><code class="lang-cpp">B[i] = a[i] - a[i - <span class="hljs-number">1</span>]
+&#x7ED9;&#x533A;&#x95F4;[l, r]&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6570;&#x52A0;&#x4E0A;c&#xFF1A;B[l] += c, B[r + <span class="hljs-number">1</span>] -= c
+</code></pre>
+<h3 id="&#x4E8C;&#x7EF4;&#x5DEE;&#x5206;"><a name="&#x4E8C;&#x7EF4;&#x5DEE;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x7EF4;&#x5DEE;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.12. &#x4E8C;&#x7EF4;&#x5DEE;&#x5206;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230116312-1640207519.png" alt=""></p>
+<p>(a&#x6570;&#x7EC4;&#x662F;b&#x6570;&#x7EC4;&#x7684;&#x524D;&#x7F00;&#x548C;)</p>
+<pre><code class="lang-cpp">&#x7ED9;&#x4EE5;(x1, y1)&#x4E3A;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;(x2, y2)&#x4E3A;&#x53F3;&#x4E0B;&#x89D2;&#x7684;&#x5B50;&#x77E9;&#x9635;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x52A0;&#x4E0A;c&#xFF1A;
+S[x1, y1] += c, S[x2 + <span class="hljs-number">1</span>, y1] -= c, S[x1, y2 + <span class="hljs-number">1</span>] -= c, S[x2 + <span class="hljs-number">1</span>, y2 + <span class="hljs-number">1</span>] += c
+</code></pre>
+<h3 id="&#x53CC;&#x6307;&#x9488;"><a name="&#x53CC;&#x6307;&#x9488;" class="anchor-navigation-ex-anchor" href="#&#x53CC;&#x6307;&#x9488;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.13. &#x53CC;&#x6307;&#x9488;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230152163-1561872434.png" alt=""></p>
+<pre><code class="lang-cpp">for (int i = 0, j = 0; i &lt; n; i ++ )
+{
+    while (j &lt; i &amp;&amp; check(i, j)) j ++ ;
+    // &#x5177;&#x4F53;&#x95EE;&#x9898;&#x7684;&#x903B;&#x8F91;
+}
+&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x7C7B;&#xFF1A;
+        (1) &#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x7528;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#x7EF4;&#x62A4;&#x4E00;&#x6BB5;&#x533A;&#x95F4;
+        (2) &#x5BF9;&#x4E8E;&#x4E24;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x7EF4;&#x62A4;&#x67D0;&#x79CD;&#x6B21;&#x5E8F;&#xFF0C;&#x6BD4;&#x5982;&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x4E2D;&#x5408;&#x5E76;&#x4E24;&#x4E2A;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x64CD;&#x4F5C;
+</code></pre>
+<h3 id="&#x4F4D;&#x8FD0;&#x7B97;"><a name="&#x4F4D;&#x8FD0;&#x7B97;" class="anchor-navigation-ex-anchor" href="#&#x4F4D;&#x8FD0;&#x7B97;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.14. &#x4F4D;&#x8FD0;&#x7B97;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230211383-1673648993.png" alt=""></p>
+<blockquote>
+<p>10</p>
+<p>for(int k = 3;k &gt;= 0;k--) cout &lt;&lt; (n&gt;&gt;k&amp;1)&lt;&lt;endl;</p>
+<p>1010</p>
+</blockquote>
+<p><strong>lowbit(x)</strong></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230222309-1420076420.png" alt=""></p>
+<p>0000 0011=3&#xFF0C;&#x5B83;&#x7684;&#x76F8;&#x53CD;&#x6570;&#x4E3A;-3=1000 0011&#xFF0C;&#x4F46;0000 0011 + 1000 0011 != 0000 0000&#x3002;&#x8BA1;&#x7B97;&#x673A;&#x5C31;&#x5F15;&#x5165;&#x4E86;<strong>&#x8865;&#x7801;</strong>&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x76F8;&#x53CD;&#x6570;&#x7684;&#x8868;&#x793A;&#x3002;&#x5C06;&#x4EBA;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x79F0;&#x4E3A;<strong>&#x539F;&#x7801;</strong>&#xFF0C;&#x8BA1;&#x7B97;&#x673A;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x65F6;&#x7528;&#x7684;&#x662F;&#x8865;&#x7801;&#x3002;<strong>&#x6B63;&#x6570;&#x7684;&#x8865;&#x7801;&#x5C31;&#x662F;&#x81EA;&#x5DF1;&#xFF0C;&#x8D1F;&#x6570;&#x7684;&#x8865;&#x7801;&#x4E3A;&#x6309;&#x4F4D;&#x53D6;&#x53CD;&#x52A0;1</strong>&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;1000 0011&#x6765;&#x8BF4;&#xFF0C;&#x82E5;&#x5176;&#x4E3A;&#x539F;&#x7801;&#xFF0C;&#x5219;&#x8868;&#x793A;-3&#xFF1B;&#x82E5;&#x5176;&#x4E3A;&#x8865;&#x7801;&#xFF0C;&#x5219;&#x8868;&#x793A;(-1)<em>2^7 + 1</em>2^1 + 1*2^0 = -125&#x3002;</p>
+<p>&#x5E94;&#x7528;&#xFF1A;&#x6C42;x&#x91CC;&#x9762;1&#x7684;&#x4E2A;&#x6570;&#x3002;</p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230237375-1030858540.png" alt=""></p>
+<pre><code class="lang-cpp">&#x6C42;n&#x7684;&#x7B2C;k&#x4F4D;&#x6570;&#x5B57;: n &gt;&gt; k &amp; <span class="hljs-number">1</span>
+&#x8FD4;&#x56DE;n&#x7684;&#x6700;&#x540E;&#x4E00;&#x4F4D;<span class="hljs-number">1</span>&#xFF1A;lowbit(n) = n &amp; -n
+</code></pre>
+<h3 id="&#x79BB;&#x6563;&#x5316;"><a name="&#x79BB;&#x6563;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x79BB;&#x6563;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.15. &#x79BB;&#x6563;&#x5316;</h3>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/2335982-20211231230258277-1318058867.png" alt=""></p>
+<pre><code class="lang-cpp"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; alls; <span class="hljs-comment">// &#x5B58;&#x50A8;&#x6240;&#x6709;&#x5F85;&#x79BB;&#x6563;&#x5316;&#x7684;&#x503C;</span>
+sort(alls.begin(), alls.end()); <span class="hljs-comment">// &#x5C06;&#x6240;&#x6709;&#x503C;&#x6392;&#x5E8F;</span>
+alls.erase(unique(alls.begin(), alls.end()), alls.end());    <span class="hljs-comment">// &#x53BB;&#x6389;&#x91CD;&#x590D;&#x5143;&#x7D20;</span>
+
+<span class="hljs-comment">// &#x4E8C;&#x5206;&#x6C42;&#x51FA;x&#x5BF9;&#x5E94;&#x7684;&#x79BB;&#x6563;&#x5316;&#x7684;&#x503C;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span>
+</span>{
+<span class="hljs-keyword">int</span> l = <span class="hljs-number">0</span>, r = alls.size() - <span class="hljs-number">1</span>;
+<span class="hljs-keyword">while</span> (l &lt; r)
+{
+<span class="hljs-keyword">int</span> mid = l + r &gt;&gt; <span class="hljs-number">1</span>;
+<span class="hljs-keyword">if</span> (alls[mid] &gt;= x) r = mid;
+<span class="hljs-keyword">else</span> l = mid + <span class="hljs-number">1</span>;
+}
+<span class="hljs-keyword">return</span> r + <span class="hljs-number">1</span>;
+}
+</code></pre>
+<h3 id="&#x533A;&#x95F4;&#x5408;&#x5E76;"><a name="&#x533A;&#x95F4;&#x5408;&#x5E76;" class="anchor-navigation-ex-anchor" href="#&#x533A;&#x95F4;&#x5408;&#x5E76;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.16. &#x533A;&#x95F4;&#x5408;&#x5E76;</h3>
+<pre><code class="lang-cpp"><span class="hljs-comment">// &#x5C06;&#x6240;&#x6709;&#x5B58;&#x5728;&#x4EA4;&#x96C6;&#x7684;&#x533A;&#x95F4;&#x5408;&#x5E76;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">merge</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;PII&gt; &amp;segs)</span>
+</span>{
+    <span class="hljs-built_in">vector</span>&lt;PII&gt; res;
+
+    sort(segs.begin(), segs.end());
+
+    <span class="hljs-keyword">int</span> st = <span class="hljs-number">-2e9</span>, ed = <span class="hljs-number">-2e9</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> seg : segs)
+        <span class="hljs-keyword">if</span> (ed &lt; seg.first)
+        {
+            <span class="hljs-keyword">if</span> (st != <span class="hljs-number">-2e9</span>) res.push_back({st, ed});
+            st = seg.first, ed = seg.second;
+        }
+        <span class="hljs-keyword">else</span> ed = max(ed, seg.second);
+
+    <span class="hljs-keyword">if</span> (st != <span class="hljs-number">-2e9</span>) res.push_back({st, ed});
+
+    segs = res;
+}
+</code></pre>
+<h2 id="&#x9898;&#x76EE;"><a name="&#x9898;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x9898;&#x76EE;</h2>
+<h3 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;"><a name="&#x5FEB;&#x901F;&#x6392;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#&#x5FEB;&#x901F;&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x5FEB;&#x901F;&#x6392;&#x5E8F;</h3>
+<h4 id="acwing-785-&#x5FEB;&#x6392;&#x5B9E;&#x4F8B;"><a name="acwing-785-&#x5FEB;&#x6392;&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#acwing-785-&#x5FEB;&#x6392;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 785. &#x5FEB;&#x6392;&#x5B9E;&#x4F8B;</h4>
+<p><strong>&#x8F93;&#x5165;</strong></p>
+<pre><code>5
+3 1 2 4 5
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x6CE8;&#x610F;<strong>&#x8FB9;&#x754C;&#x95EE;&#x9898;</strong>&#x3002;&#x4E0B;&#x9762;&#x7528;<strong>j</strong>&#xFF0C;&#x4E0A;&#x9762;&#x4E0D;&#x80FD;&#x53D6;&#x5230; <strong>q[r]</strong>&#x3002;&#x4E0B;&#x9762;&#x7528;<strong>i</strong>,&#x4E0A;&#x9762;&#x4E0D;&#x80FD;&#x53D6;&#x5230; <strong>q[l]</strong>&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x73B0; &#x2205;&#x548C;[0,1]&#x7684;&#x6B7B;&#x5FAA;&#x73AF;&#x3002;&#x53EF;&#x4EE5;&#x7528;q[r]&#x6216;q[(l+r)/2]&#x3002;</p>
+<pre><code class="lang-cpp">
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1e6</span>+<span class="hljs-number">10</span>;
+<span class="hljs-keyword">int</span> n;
+<span class="hljs-keyword">int</span> q[N];
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">quick_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> l,<span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">if</span>(l &gt;= r)  <span class="hljs-keyword">return</span>;             <span class="hljs-comment">////&#x8865;&#x7B49;&#x4E8E;&#x53F7;</span>
+    <span class="hljs-keyword">int</span> x = q[(l+r)/<span class="hljs-number">2</span>],i = l<span class="hljs-number">-1</span>,j = r+<span class="hljs-number">1</span>;     <span class="hljs-comment">//x&#x5E94;&#x5F53;&#x56FA;&#x5B9A;q</span>
+    <span class="hljs-keyword">while</span>(i &lt; j)
+    {
+        <span class="hljs-keyword">do</span> i++;<span class="hljs-keyword">while</span>(q[i]&lt;x);
+        <span class="hljs-keyword">do</span> j--;<span class="hljs-keyword">while</span>(q[j]&gt;x);
+        <span class="hljs-keyword">if</span>(i &lt; j)   swap(q[i],q[j]);
+    }
+    quick_sort(l,j);
+    quick_sort(j+<span class="hljs-number">1</span>,r);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ ) <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;q[i]);
+
+    quick_sort(<span class="hljs-number">0</span>,n<span class="hljs-number">-1</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ ) <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,q[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><strong>&#x6539;&#x8FDB;</strong>&#x7684;&#x5FEB;&#x6392;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1e6</span>+<span class="hljs-number">10</span>;
+<span class="hljs-keyword">int</span> n;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; arr, <span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j)</span>
+</span>{
+    <span class="hljs-keyword">int</span> tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+}
+
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; partiton(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; arr, <span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)    <span class="hljs-comment">//&#x8377;&#x5170;&#x56FD;&#x65D7;&#x95EE;&#x9898;</span>
+{
+    <span class="hljs-keyword">int</span> less = l - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">int</span> more = r;
+    <span class="hljs-keyword">while</span> (l&lt;more)
+    {
+        <span class="hljs-keyword">if</span> (arr[l] &lt; arr[r])
+        {
+            swap(arr, ++less, l++);
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (arr[l] &gt; arr[r])
+        {
+            swap(arr, --more, l);
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            l++;
+        }
+    }
+    swap(arr, more, r);            <span class="hljs-comment">//&#x9ED8;&#x8BA4;&#x4EE5;arr[r]&#x505A;&#x5212;&#x5206;&#xFF0C;&#x4E0D;&#x53EF;&#x9057;&#x6F0F;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x6570;&#xFF01;</span>
+    <span class="hljs-keyword">return</span> { less + <span class="hljs-number">1</span>,more };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; arr, <span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span>        <span class="hljs-comment">//&#x6539;&#x8FDB;&#x7684;&#x5FEB;&#x6392;&#xFF0C;&#x968F;&#x673A;&#x53D6;&#x6570;&#x5B57;&#x505A;&#x5212;&#x5206;&#x503C;</span>
+</span>{
+    <span class="hljs-keyword">if</span> (l &lt; r)
+    {
+        swap(arr, l + rand() % (r - l + <span class="hljs-number">1</span>), r);        
+        <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;p = partiton(arr, l, r);    <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x5212;&#x5206;&#x533A;&#x57DF;&#xFF08;&#x5982;[5 5 5]&#xFF09;&#x7684;&#x5DE6;&#x8FB9;&#x754C;&#x548C;&#x53F3;&#x8FB9;&#x754C;</span>
+        quickSort(arr, l, p[<span class="hljs-number">0</span>] - <span class="hljs-number">1</span>);    <span class="hljs-comment">//&lt;&#x533A;</span>
+        quickSort(arr, p[<span class="hljs-number">1</span>] + <span class="hljs-number">1</span>, r);    <span class="hljs-comment">//&gt;&#x533A;</span>
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; q(n);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ ) <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;q[i]);
+
+    quickSort(q,<span class="hljs-number">0</span>,n<span class="hljs-number">-1</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ ) <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,q[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="acwing-786-&#x7B2C;k&#x4E2A;&#x6570;"><a name="acwing-786-&#x7B2C;k&#x4E2A;&#x6570;" class="anchor-navigation-ex-anchor" href="#acwing-786-&#x7B2C;k&#x4E2A;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 786. &#x7B2C;k&#x4E2A;&#x6570;</h4>
+<p><strong>&#x8F93;&#x5165;</strong></p>
+<pre><code>5 3
+2 4 1 5 3
+</code></pre><p><strong>&#x8F93;&#x51FA;</strong></p>
+<p><code>3</code></p>
+<p><strong>&#x89E3;&#x6790;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">quick_sort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;q,<span class="hljs-keyword">int</span> l,<span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">while</span>(l &gt;= r)   <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">int</span> x = q[l+(r-l&gt;&gt;<span class="hljs-number">1</span>)],i = l<span class="hljs-number">-1</span>,j =r+<span class="hljs-number">1</span>;       <span class="hljs-comment">//&#x6CE8;&#x610F;(r-l&gt;&gt;1)&#x62EC;&#x53F7;&#x4F4D;&#x7F6E;&#x3002;</span>
+    <span class="hljs-keyword">while</span>(i &lt; j)
+    {
+        <span class="hljs-keyword">do</span> ++i;<span class="hljs-keyword">while</span>(q[i]&lt;x);
+        <span class="hljs-keyword">do</span> --j;<span class="hljs-keyword">while</span>(q[j]&gt;x);
+        <span class="hljs-keyword">if</span>(i &lt; j)   swap(q[i],q[j]);        
+    }
+    quick_sort(q,l,j);
+    quick_sort(q,j+<span class="hljs-number">1</span>,r);
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,k;
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>, &amp;n, &amp;k);
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;q(n);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; n;++i)    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;q[i]);
+    quick_sort(q,<span class="hljs-number">0</span>,n<span class="hljs-number">-1</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,q[k<span class="hljs-number">-1</span>]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_50deed4916-3.png" alt="3.png"> 
+&#x964D;&#x4F4E;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x82E5;&#x5DE6;&#x8FB9;&#x6570;&#x91CF;&#x5DF2;&#x5927;&#x4E8E;k&#xFF0C;&#x5219;&#x53EA;&#x5BF9;&#x5DE6;&#x8FB9;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF1B;&#x5426;&#x5219;&#x5BF9;&#x53F3;&#x8FB9;&#x3002;<strong>&#x5206;&#x6CBB;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-comment">// #include&lt;bits/stdc++.h&gt;</span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> n,k;
+<span class="hljs-keyword">int</span> q[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">quick_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> q[],<span class="hljs-keyword">int</span> l,<span class="hljs-keyword">int</span> r,<span class="hljs-keyword">int</span> k)</span>
+</span>{
+    <span class="hljs-keyword">if</span>(l &gt;= r)      <span class="hljs-comment">// if(l == r)</span>
+        <span class="hljs-keyword">return</span> q[l];
+    <span class="hljs-keyword">int</span> x = q[(l+r)&gt;&gt;<span class="hljs-number">1</span>],i = l<span class="hljs-number">-1</span>,j = r+<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span>(i &lt; j)
+    {
+        <span class="hljs-keyword">do</span> ++i;<span class="hljs-keyword">while</span>(q[i] &lt; x);     <span class="hljs-comment">//while(q[++i] &lt; x)</span>
+        <span class="hljs-keyword">do</span> --j;<span class="hljs-keyword">while</span>(q[j] &gt; x);     <span class="hljs-comment">//while(q[--j] &gt; x)</span>
+        <span class="hljs-keyword">if</span>(i &lt; j)   swap(q[i],q[j]);
+    }
+    <span class="hljs-keyword">int</span> sl = j - l + <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">if</span>(k &lt;= sl)  quick_sort(q,l,j,k);
+    <span class="hljs-keyword">else</span>    <span class="hljs-keyword">return</span> quick_sort(q,j+<span class="hljs-number">1</span>,r,k-sl);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>,&amp;n,&amp;k); 
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;q[i]);
+    <span class="hljs-built_in">cout</span> &lt;&lt; quick_sort(q,<span class="hljs-number">0</span>,n<span class="hljs-number">-1</span>,k)&lt;&lt;<span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><a name="&#x5F52;&#x5E76;&#x6392;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x5F52;&#x5E76;&#x6392;&#x5E8F;</h3>
+<h4 id="acwing-787-&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><a name="acwing-787-&#x5F52;&#x5E76;&#x6392;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#acwing-787-&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 787. &#x5F52;&#x5E76;&#x6392;&#x5E8F;</h4>
+<p><strong>&#x8F93;&#x5165;</strong></p>
+<pre><code>5
+3 1 2 4 5
+</code></pre><p><strong>&#x8F93;&#x51FA;</strong></p>
+<p><code>1 2 3 4 5</code></p>
+<p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#xFF1A;
+1.&#x786E;&#x5B9A;&#x5206;&#x754C;&#x70B9;
+2.&#x9012;&#x5F52;&#x6392;&#x5E8F;
+3.&#x5F52;&#x5E76;&#x2014;&#x2014;&#x2014;&#x2014;&#x5408;&#x4E8C;&#x4E3A;&#x4E00;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">int</span> n;    
+<span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;tmp(N);
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;q(N);
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">merge_sort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;q,<span class="hljs-keyword">int</span> l,<span class="hljs-keyword">int</span> r)</span>  <span class="hljs-comment">//&#x95ED;&#x533A;&#x95F4;</span>
+</span>{
+    <span class="hljs-keyword">if</span>(l &gt;= r)  <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">int</span> mid = l+(r-l&gt;&gt;<span class="hljs-number">1</span>);   <span class="hljs-comment">//&#x6216; l+r&gt;&gt;1</span>
+    merge_sort(q,l,mid);
+    merge_sort(q,mid+<span class="hljs-number">1</span>,r);
+
+    <span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>,i = l,j = mid+<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span>(i &lt;= mid &amp;&amp; j &lt;= r)
+    {
+        <span class="hljs-keyword">if</span>(q[i] &lt; q[j]) tmp[k++] = q[i++];
+        <span class="hljs-keyword">else</span> tmp[k++] = q[j++];
+    }
+    <span class="hljs-keyword">while</span>(i &lt;= mid) tmp[k++] = q[i++];
+    <span class="hljs-keyword">while</span>(j &lt;= r)   tmp[k++] = q[j++];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = l,j = <span class="hljs-number">0</span>; i &lt;= r; i ++,j++ )    q[i] = tmp[j];  <span class="hljs-comment">//&#x6CE8;&#x610F;q[i]&#x6761;&#x4EF6; </span>
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ ) <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;q[i]);
+
+    merge_sort(q,<span class="hljs-number">0</span>,n<span class="hljs-number">-1</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ ) <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,q[i]);
+}
+</code></pre>
+<h4 id="acwing-788-&#x9006;&#x5E8F;&#x5BF9;&#x7684;&#x6570;&#x91CF;"><a name="acwing-788-&#x9006;&#x5E8F;&#x5BF9;&#x7684;&#x6570;&#x91CF;" class="anchor-navigation-ex-anchor" href="#acwing-788-&#x9006;&#x5E8F;&#x5BF9;&#x7684;&#x6570;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 788. &#x9006;&#x5E8F;&#x5BF9;&#x7684;&#x6570;&#x91CF;</h4>
+<p><strong>&#x8F93;&#x5165;</strong></p>
+<pre><code>6
+2 3 4 5 6 1
+</code></pre><p><strong>&#x8F93;&#x51FA;</strong></p>
+<p><code>5</code></p>
+<p><strong>&#x89E3;&#x6790;</strong></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_b8e943dd17-4.png" alt="4.png"> 
+4 5 6 | 1 2 3
+&#x5F53;&#x4F60;&#x53D1;&#x73B0; 4 &#x6BD4; 3 &#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53F3;&#x8FB9;&#x6700;&#x5927;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5C0F;&#x4E8E;&#x5DE6;&#x8FB9;&#x6700;&#x5C0F;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x5DE6;&#x8FB9;&#x5269;&#x4E0B;&#x7684;5&#x548C;6&#x90FD;&#x5FC5;&#x7136;&#x6BD4;&#x53F3;&#x8FB9;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x5927;&#x3002;&#x56E0;&#x6B64;&#x5C31;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x6570;5&#x548C;6&#x7684;&#x60C5;&#x5F62;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x5206;&#x522B;&#x52A0;&#x4E0A;&#x53F3;&#x534A;&#x8FB9;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x5C31;&#x964D;&#x4F4E;&#x5230;&#x4E86;<strong>O(n)</strong>
+&#x5373; &#x4F4D;&#x7F6E;6(mid) - &#x4F4D;&#x7F6E;4(i) + 1&#x3002;&#x4E3A;3&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> n;
+<span class="hljs-keyword">int</span> q[N];
+<span class="hljs-keyword">int</span> tmp[N];
+<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> res = <span class="hljs-number">0</span>;      <span class="hljs-comment">//int&#x5219;&#x6EA2;&#x51FA;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">merge_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> q[],<span class="hljs-keyword">int</span> l,<span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">if</span>(l &gt;= r)  <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">int</span> mid = l+r &gt;&gt; <span class="hljs-number">1</span>;
+
+    merge_sort(q,l,mid);
+    merge_sort(q,mid+<span class="hljs-number">1</span>,r);
+
+    <span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>,i = l,j = mid+<span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">while</span>(i &lt;= mid &amp;&amp; j &lt;= r)
+    {
+        <span class="hljs-keyword">if</span>(q[i] &lt;= q[j]) tmp[k++] = q[i++];
+        <span class="hljs-keyword">else</span>    
+        {
+            tmp[k++] = q[j++];
+            res +=( mid - i + <span class="hljs-number">1</span>);       <span class="hljs-comment">//&#x9006;&#x5E8F;&#x5BF9;&#x5BF9;&#x6BD4;&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#x53EA;&#x52A0;&#x4E86;&#x8FD9;&#x4E00;&#x53E5;&#x3002; //&#x662F;i,&#x975E;l</span>
+        }
+    }
+    <span class="hljs-keyword">while</span>(i &lt;= mid) tmp[k++] = q[i++];
+    <span class="hljs-keyword">while</span>(j &lt;= r)   tmp[k++] = q[j++];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = l,j = <span class="hljs-number">0</span>; i &lt;= r; i ++,j++ )     q[i] = tmp[j];
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;q[i]);
+
+    merge_sort(q,<span class="hljs-number">0</span>,n<span class="hljs-number">-1</span>);
+
+    <span class="hljs-built_in">cout</span>&lt;&lt;res&lt;&lt;<span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="&#x4E8C;&#x5206;"><a name="&#x4E8C;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x4E8C;&#x5206;</h3>
+<h4 id="acwing-789-&#x6570;&#x7684;&#x8303;&#x56F4;"><a name="acwing-789-&#x6570;&#x7684;&#x8303;&#x56F4;" class="anchor-navigation-ex-anchor" href="#acwing-789-&#x6570;&#x7684;&#x8303;&#x56F4;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 789. &#x6570;&#x7684;&#x8303;&#x56F4;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>6 3
+1 2 2 3 3 4
+3
+4
+5
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3 4
+5 5
+-1 -1
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> n,k;
+<span class="hljs-keyword">int</span> q[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>,&amp;n,&amp;k);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;q[i]);
+
+    <span class="hljs-keyword">while</span>(k --)
+    {
+        <span class="hljs-keyword">int</span> x;
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;x);
+
+        <span class="hljs-keyword">int</span> l = <span class="hljs-number">0</span>,r = n<span class="hljs-number">-1</span>;
+        <span class="hljs-keyword">while</span>(l &lt; r)
+        {
+            <span class="hljs-keyword">int</span> mid = l+r &gt;&gt; <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">if</span>(q[mid] &gt;= x) r = mid;        <span class="hljs-comment">//&#x6CE8;&#x610F;&#x662F;q[mid]&#x800C;&#x975E;mid</span>
+            <span class="hljs-keyword">else</span>    l = mid+<span class="hljs-number">1</span>;
+        }
+        <span class="hljs-keyword">if</span>(q[l]!=x) <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">&quot;-1 -1&quot;</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+        <span class="hljs-keyword">else</span>
+        {
+            <span class="hljs-built_in">cout</span> &lt;&lt; l &lt;&lt;<span class="hljs-string">&apos; &apos;</span>;
+
+            <span class="hljs-keyword">int</span> l = <span class="hljs-number">0</span>,r = n<span class="hljs-number">-1</span>;
+            <span class="hljs-keyword">while</span>(l &lt;r)
+            {
+                <span class="hljs-keyword">int</span> mid = l+r+<span class="hljs-number">1</span> &gt;&gt; <span class="hljs-number">1</span>;
+                <span class="hljs-keyword">if</span>(q[mid] &lt;= x) l = mid;
+                <span class="hljs-keyword">else</span>    r = mid<span class="hljs-number">-1</span>;
+            }
+            <span class="hljs-built_in">cout</span>&lt;&lt; l &lt;&lt; <span class="hljs-built_in">endl</span>;
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>&#x53E6;&#xFF1A;
+&#x4E8C;&#x5206;&#x5E94;&#x7528;
+<a href="https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/" target="_blank">0&#xFF5E;n-1&#x4E2D;&#x7F3A;&#x5931;&#x7684;&#x6570;&#x5B57;</a> </p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int</span> l = <span class="hljs-number">0</span>,r = nums.size()<span class="hljs-number">-1</span>;
+<span class="hljs-keyword">while</span>(l &lt;= r)
+{
+    <span class="hljs-keyword">int</span> mid = l+r&gt;&gt;<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">if</span>(nums[mid]==mid)  l = mid+<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">else</span>    r = mid<span class="hljs-number">-1</span>;          <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x51CF;&#x4E00;&#xFF0C;while&#x5185;&#x52A0; = &#x4E0D;&#x518D;&#x6B7B;&#x5FAA;&#x73AF;</span>
+}
+</code></pre>
+<p>&#x4EA6;&#x53EF;</p>
+<pre><code>int l = 0,r = nums.size();      //-1&#x662F;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x7684;
+while(l &lt; r)
+{
+    int mid = l+r&gt;&gt;1;
+    if(nums[mid]==mid)  l = mid+1;
+    else    r = mid;
+}
+</code></pre><h4 id="acwing-790-&#x6570;&#x7684;&#x4E09;&#x6B21;&#x65B9;&#x6839;"><a name="acwing-790-&#x6570;&#x7684;&#x4E09;&#x6B21;&#x65B9;&#x6839;" class="anchor-navigation-ex-anchor" href="#acwing-790-&#x6570;&#x7684;&#x4E09;&#x6B21;&#x65B9;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 790. &#x6570;&#x7684;&#x4E09;&#x6B21;&#x65B9;&#x6839;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>1000.00
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>10.000000
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">double</span> n;
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%lf&quot;</span>, &amp;n);
+    <span class="hljs-keyword">double</span> l = <span class="hljs-number">-100.0</span>,r = <span class="hljs-number">100.0</span>;        <span class="hljs-comment">//r&#x4E0D;&#x4E3A;n&#xFF0C;&#x8D1F;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x7ED3;&#x679C;&#x5927;&#x4E8E;n</span>
+    <span class="hljs-keyword">while</span>(r - l &gt; <span class="hljs-number">1e-8</span>)
+    {
+        <span class="hljs-keyword">double</span> mid = (r+l)/<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">if</span>((mid*mid*mid) &gt;= n)    r = mid;
+        <span class="hljs-keyword">else</span>    l = mid;            <span class="hljs-comment">//&#x7ED3;&#x5408;while&#x6761;&#x4EF6;&#xFF0C;&#x6B64;&#x60C5;&#x51B5;&#x65E0;&#x9700;&#x52A0;1</span>
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%.6lf&quot;</span>,l);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="&#x9AD8;&#x7CBE;&#x5EA6;"><a name="&#x9AD8;&#x7CBE;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7CBE;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. &#x9AD8;&#x7CBE;&#x5EA6;</h3>
+<h4 id="acwing-791-&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;"><a name="acwing-791-&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#acwing-791-&#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 791. &#x9AD8;&#x7CBE;&#x5EA6;&#x52A0;&#x6CD5;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>12
+23
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>35
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; add(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;A,<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;B)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; C;
+    <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; A.size()||i &lt; B.size();++i)
+    {
+        <span class="hljs-keyword">if</span>(i &lt; A.size())    t += A[i];
+        <span class="hljs-keyword">if</span>(i &lt; B.size())    t += B[i];
+        C.push_back(t % <span class="hljs-number">10</span>);
+        t /= <span class="hljs-number">10</span>;
+    }
+    <span class="hljs-keyword">if</span>(t)   C.push_back(<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">return</span> C;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">string</span> a,b;
+    <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;A,B;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = a.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  A.push_back(a[i] - <span class="hljs-string">&apos;0&apos;</span>);    <span class="hljs-comment">//&#x4E0D;&#x8981;&#x5FD8;&#x4E86;-&apos;0&apos;&#xFF0C;&#x5B57;&#x7B26;--&gt; &#x6570;&#x5B57;</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = b.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  B.push_back(b[i] - <span class="hljs-string">&apos;0&apos;</span>);
+    <span class="hljs-keyword">auto</span> C = add(A,B);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = C.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,C[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="acwing-792-&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;"><a name="acwing-792-&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#acwing-792-&#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 792. &#x9AD8;&#x7CBE;&#x5EA6;&#x51CF;&#x6CD5;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>32
+11
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>21
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x4E24;&#x8005;&#x90FD;&#x662F;<strong>&#x6B63;&#x6574;&#x6570;</strong>&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x9700;&#x8F6C;&#x4E3A; <strong>A&gt;=B</strong>&#x3002;&#x82E5;&#x6709;&#x8D1F;&#x6570;&#xFF0C;&#x5219;&#x4E24;&#x6570;&#x76F8;&#x51CF;A-B&#xFF0C;&#x4E00;&#x5B9A;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x6210;<strong>|A|-|B|</strong>&#x6216;<strong>|A|+|B|</strong>&#xFF0C;&#x5206;&#x60C5;&#x51B5;&#x8BA8;&#x8BBA;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;bits/stdc++.h&quot;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-comment">//&#x5224;&#x65AD;&#x662F;&#x5426; A&gt;=B</span>
+<span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">cmp</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;A,<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;B)</span>
+</span>{
+    <span class="hljs-keyword">if</span>(A.size() != B.size())    <span class="hljs-keyword">return</span> A.size()&gt;B.size();
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = A.size()<span class="hljs-number">-1</span>;i &gt;=<span class="hljs-number">0</span>;--i)
+    {
+        <span class="hljs-keyword">if</span>(A[i]!=B[i])
+            <span class="hljs-keyword">return</span> A[i]&gt;B[i];
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-comment">//C = A - B</span>
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; sub(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;A,<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;B)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;C;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>,t = <span class="hljs-number">0</span>;i &lt; A.size();++i)
+    {
+        t = A[i] - t;
+        <span class="hljs-keyword">if</span>(i &lt; B.size())    t -= B[i];
+        C.push_back((t+<span class="hljs-number">10</span>)%<span class="hljs-number">10</span>);
+        <span class="hljs-keyword">if</span>(t &lt; <span class="hljs-number">0</span>)   t = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">else</span>    t = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-comment">//&#x5220;&#x9664;&#x524D;&#x5BFC;0</span>
+    <span class="hljs-keyword">while</span>(C.size()&gt;<span class="hljs-number">1</span>&amp;&amp;C.back()==<span class="hljs-number">0</span>)  C.pop_back();
+    <span class="hljs-keyword">return</span> C;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">string</span> a,b;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;A,B;
+    <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = a.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  A.push_back(a[i] - <span class="hljs-string">&apos;0&apos;</span>);    <span class="hljs-comment">//&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;-&apos;0&apos;,&#x5B57;&#x7B26;--&gt;&#x6570;&#x5B57;</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = b.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  B.push_back(b[i] - <span class="hljs-string">&apos;0&apos;</span>);
+
+    <span class="hljs-keyword">if</span>(cmp(A,B))
+    {
+        <span class="hljs-keyword">auto</span> C = sub(A,B);
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = C.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,C[i]);
+    }
+    <span class="hljs-keyword">else</span>
+    {
+        <span class="hljs-keyword">auto</span> C = sub(B,A);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;-&quot;</span>);            <span class="hljs-comment">//&#x8BB0;&#x5F97;&#x52A0;&#x7B26;&#x53F7;</span>
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = C.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,C[i]);
+    }
+}
+</code></pre>
+<h4 id="acwing-793-&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x6CD5;"><a name="acwing-793-&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#acwing-793-&#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 793. &#x9AD8;&#x7CBE;&#x5EA6;&#x4E58;&#x6CD5;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>2
+3
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>6
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p><strong>&#x9AD8;</strong>&#x7CBE;&#x5EA6;&#x4E58;<strong>&#x4F4E;</strong>&#x7CBE;&#x5EA6;
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_e84b7dee0f-&#x56FE;&#x7247;1.png" alt="&#x56FE;&#x7247;1.png"> </p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;bits/stdc++.h&quot;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; mul(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;A,<span class="hljs-keyword">int</span> b)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;C;
+    <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; A.size() || t;++i)
+    {
+        <span class="hljs-keyword">if</span>(i &lt; A.size())    t += A[i]*b;
+        C.push_back(t % <span class="hljs-number">10</span>);
+        t /= <span class="hljs-number">10</span>;
+    }
+    <span class="hljs-keyword">while</span>(C.size()&gt;<span class="hljs-number">1</span>&amp;&amp;C.back()==<span class="hljs-number">0</span>)  C.pop_back();   <span class="hljs-comment">//&#x53BB;&#x9664;&#x524D;&#x5BFC;0</span>
+    <span class="hljs-keyword">return</span> C;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">string</span> a;
+    <span class="hljs-keyword">int</span> b;
+    <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;A;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = a.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  A.push_back(a[i] -<span class="hljs-string">&apos;0&apos;</span>);
+    <span class="hljs-keyword">auto</span> C = mul(A,b);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = C.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,C[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><strong>&#x9AD8;</strong>&#x7CBE;&#x5EA6;&#x4E58;&#x4EE5;<strong>&#x9AD8;</strong>&#x7CBE;&#x5EA6;    &#x53C2;&#x8003;<a href="https://leetcode-cn.com/problems/multiply-strings/" target="_blank">LeetCode-43</a> 
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_1a93ea880f-1627700273-JdpAic-image.png" alt="1627700273-JdpAic-image.png"> </p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-built_in">string</span> a,b;
+
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; mul(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;A,<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;B)
+{
+    <span class="hljs-keyword">int</span> len1 = A.size(),len2 = B.size();
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;C(len1+len2);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; len1;++i)
+    {
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>;j &lt; len2;++j)
+        {
+            C[i+j] += A[i]*B[j];
+        }
+    }
+    <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; C.size();++i)
+    {
+        t += C[i];
+        C[i] = t % <span class="hljs-number">10</span>;
+        t /= <span class="hljs-number">10</span>;
+    }
+    <span class="hljs-keyword">while</span>(C.size()&gt;<span class="hljs-number">1</span> &amp;&amp; C.back() == <span class="hljs-number">0</span>)  C.pop_back();
+    <span class="hljs-keyword">return</span> C;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;A,B;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = a.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  A.push_back(a[i]-<span class="hljs-string">&apos;0&apos;</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = b.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  B.push_back(b[i]- <span class="hljs-string">&apos;0&apos;</span>);
+    <span class="hljs-keyword">auto</span> C = mul(A,B);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = C.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,C[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="acwing-794-&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x6CD5;"><a name="acwing-794-&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#acwing-794-&#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 794. &#x9AD8;&#x7CBE;&#x5EA6;&#x9664;&#x6CD5;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>7
+2
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3
+1
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x533A;&#x522B;&#x524D;&#x8005;&#xFF0C;&#x4ECE;<strong>&#x6700;&#x9AD8;&#x4F4D;</strong>&#x5F00;&#x59CB;&#x7B97;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x4ECE;&#x540E;&#x5F80;&#x524D;&#x5B58;&#xFF0C;&#x6B64;&#x5904;&#x4E3A;&#x7EDF;&#x4E00;&#x64CD;&#x4F5C;&#x90FD;&#x4ECE;&#x540E;&#x5411;&#x524D;&#x5B58;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;bits/stdc++.h&quot;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-comment">// A/b,&#x5546;&#x4E3A;C,&#x4F59;&#x6570;&#x662F;r</span>
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; div(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp;A,<span class="hljs-keyword">int</span> &amp;b,<span class="hljs-keyword">int</span> &amp;r)
+{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; C;  <span class="hljs-comment">//&#x5546;</span>
+    r = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = A.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)
+    {
+        r = r*<span class="hljs-number">10</span> + A[i];
+        C.push_back(r/b);
+        r %= b;
+    }
+    reverse(C.begin(),C.end());
+    <span class="hljs-keyword">while</span>(C.size()&gt;<span class="hljs-number">1</span>&amp;&amp;C.back()==<span class="hljs-number">0</span>)  C.pop_back();
+    <span class="hljs-keyword">return</span> C;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">string</span> a;
+    <span class="hljs-keyword">int</span> b;
+    <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; A;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = a.size()<span class="hljs-number">-1</span>;i &gt;= <span class="hljs-number">0</span>;--i)  A.push_back(a[i] - <span class="hljs-string">&apos;0&apos;</span>);
+    <span class="hljs-keyword">int</span> r = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">auto</span> C = div(A,b,r);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = C.size()<span class="hljs-number">-1</span>;i &gt;=<span class="hljs-number">0</span>;--i)   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,C[i]);
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>&lt;&lt;r&lt;&lt;<span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<h3 id="&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;"><a name="&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. &#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;</h3>
+<h4 id="acwing-795-&#x524D;&#x7F00;&#x548C;"><a name="acwing-795-&#x524D;&#x7F00;&#x548C;" class="anchor-navigation-ex-anchor" href="#acwing-795-&#x524D;&#x7F00;&#x548C;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 795. &#x524D;&#x7F00;&#x548C;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>5 3
+2 1 3 6 4
+1 2
+1 3
+2 4
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3
+6
+10
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x505A;&#x9898;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x822C;&#x4F7F;&#x7528; <strong>scanf printf</strong>&#x3002;
+cin &#x548C; cout &#x6BD4; scanf printf &#x6162;&#x7684;&#x591A;&#x3002;&#x56E0;&#x4E3A;cin cout&#x4E0E;stdin stdout&#x603B;&#x662F;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#xFF0C;&#x8FD9;&#x4E2A;&#x517C;&#x5BB9;&#x6027;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5BFC;&#x81F4; cin &#x6709;&#x8BB8;&#x591A;&#x989D;&#x5916;&#x5F00;&#x9500;&#x3002;
+ios::sync_with_stdio(false);&#x8FD9;&#x6761;&#x8BED;&#x53E5;&#x4F5C;&#x7528;&#x662F;&#x5173;&#x6389;scanf &#x548C;cin &#x7684;&#x540C;&#x6B65;&#xFF0C;&#x52A0;&#x5FEB;&#x6548;&#x7387;&#xFF1B;&#x52A3;&#x52BF;&#x662F;scanf&#x548C;cin &#x65E0;&#x6CD5;&#x6DF7;&#x7528;&#x3002;</p>
+<hr>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> n,m,q[N],s[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-comment">//ios::sync_with_stdio(false);</span>
+
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>,&amp;n,&amp;m);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;q[i]);
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n; i ++ )    s[i] = s[i<span class="hljs-number">-1</span>] + q[i];
+
+    <span class="hljs-keyword">while</span> (m -- )
+    {
+        <span class="hljs-keyword">int</span> l,r;
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>, &amp;l, &amp;r);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,s[r]-s[l<span class="hljs-number">-1</span>]);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_03004b0d17-5.png" alt="5.png"> 
+1.&#x9884;&#x5904;&#x7406;&#x524D;&#x7F00;&#x548C;&#x6570;&#x7EC4;
+2.&#x7528;&#x516C;&#x5F0F;&#x6C42;&#x533A;&#x95F4;&#x548C;</p>
+<p>&#x6709;f(i-1)&#x7B49; -1 &#x7684;&#x64CD;&#x4F5C;&#x4E00;&#x822C;&#x5FAA;&#x73AF;&#x4ECE; <strong>1</strong> &#x5F00;&#x59CB;&#x3002;</p>
+<h4 id="acwing-796-&#x5B50;&#x77E9;&#x9635;&#x7684;&#x548C;"><a name="acwing-796-&#x5B50;&#x77E9;&#x9635;&#x7684;&#x548C;" class="anchor-navigation-ex-anchor" href="#acwing-796-&#x5B50;&#x77E9;&#x9635;&#x7684;&#x548C;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 796. &#x5B50;&#x77E9;&#x9635;&#x7684;&#x548C;</h4>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3 4 3
+1 7 2 4
+3 6 2 8
+2 1 2 3
+1 1 2 2
+2 1 3 4
+1 3 3 4
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>17
+27
+21
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x4E0B;&#x6807;&#x4ECE; <strong>1</strong> &#x5F00;&#x59CB;
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_84a126e716-&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20210915214026.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20210915214026.png"> </p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">int</span> n,m,q;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1010</span>;
+<span class="hljs-keyword">int</span> a[N][N],s[N][N];
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d%d&quot;</span>, &amp;n, &amp;m,&amp;q);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)
+    {
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>;j &lt;= m;++j)
+        {
+            <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;a[i][j]);
+        }
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)
+    {
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>;j &lt;= m;++j)
+        {
+            s[i][j] = s[i<span class="hljs-number">-1</span>][j]+s[i][j<span class="hljs-number">-1</span>]-s[i<span class="hljs-number">-1</span>][j<span class="hljs-number">-1</span>]+a[i][j];  <span class="hljs-comment">//&#x6C42;&#x524D;&#x7F00;&#x548C;</span>
+        }
+    }
+    <span class="hljs-keyword">while</span> (q -- )
+    {
+        <span class="hljs-keyword">int</span> x1,y1,x2,y2;
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d%d%d&quot;</span>,&amp;x1,&amp;y1,&amp;x2,&amp;y2);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,s[x2][y2]-s[x2][y1<span class="hljs-number">-1</span>]-s[x1<span class="hljs-number">-1</span>][y2]+s[x1<span class="hljs-number">-1</span>][y1<span class="hljs-number">-1</span>]); <span class="hljs-comment">//&#x7B97;&#x5B50;&#x77E9;&#x9635;</span>
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>(&#x4E60;&#x9898;&#x8BFE;)
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_d652c3ff17-6.png" alt="2"> 
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_2936066c17-7.png" alt="1"></p>
+<h4 id="acwing-797-&#x5DEE;&#x5206;"><a name="acwing-797-&#x5DEE;&#x5206;" class="anchor-navigation-ex-anchor" href="#acwing-797-&#x5DEE;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 797. &#x5DEE;&#x5206;</h4>
+<p>&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A; n &#x7684;&#x6574;&#x6570;&#x5E8F;&#x5217;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x8F93;&#x5165; m &#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x6BCF;&#x4E2A;&#x64CD;&#x4F5C;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x6574;&#x6570; l,r,c&#xFF0C;&#x8868;&#x793A;&#x5C06;&#x5E8F;&#x5217;&#x4E2D; [l,r] &#x4E4B;&#x95F4;&#x7684;&#x6BCF;&#x4E2A;&#x6570;&#x52A0;&#x4E0A; c&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>6 3
+1 2 2 1 2 1
+1 3 1
+3 5 1
+1 6 1
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3 4 5 3 4 2
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x5DEE;&#x5206;&#x65E0;&#x9700;&#x4E13;&#x95E8;&#x8003;&#x8651;<strong>&#x6784;&#x9020;</strong>&#x95EE;&#x9898;&#xFF0C;&#x8003;&#x8651;&#x5982;&#x4F55; <strong>&#x66F4;&#x65B0;</strong> &#x5373;&#x53EF;&#x3002;&#x6784;&#x9020;&#x4E0E;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#x53EF;&#x7EDF;&#x4E00;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> n,m;
+<span class="hljs-keyword">int</span> a[N],b[N];
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> l,<span class="hljs-keyword">int</span> r,<span class="hljs-keyword">int</span> c)</span>
+</span>{
+    b[l] += c;
+    b[r+<span class="hljs-number">1</span>] -= c;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>, &amp;n, &amp;m);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a[i]);  
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)   insert(i,i,a[i]);   <span class="hljs-comment">//&#x6784;&#x9020;b[i]&#x77E9;&#x9635;(&#x5DEE;&#x5206;)</span>
+
+    <span class="hljs-keyword">while</span> (m -- )
+    {
+        <span class="hljs-keyword">int</span> l,r,c;
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d%d&quot;</span>, &amp;l, &amp;r,&amp;c);
+        insert(l,r,c);
+    }
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)   b[i] += b[i<span class="hljs-number">-1</span>];     <span class="hljs-comment">//&#x524D;&#x7F00;&#x548C;&#x8BA1;&#x7B97;(&#x539F;&#x6570;&#x7EC4;) &#x6216; a[i] = a[i-1] + b[i]</span>
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,b[i]); <span class="hljs-comment">//&#x63A5;&#x4E0A; &#x6216; a[i]</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>(&#x4E60;&#x9898;&#x8BFE;)
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_a5cadb3217-8.png" alt="8.png"> 
+&#x6784;&#x9020;&#x540C; [1,1] a1     [2,2] a2 &#x2026;</p>
+<h4 id="acwing-798-&#x5DEE;&#x5206;&#x77E9;&#x9635;"><a name="acwing-798-&#x5DEE;&#x5206;&#x77E9;&#x9635;" class="anchor-navigation-ex-anchor" href="#acwing-798-&#x5DEE;&#x5206;&#x77E9;&#x9635;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 798. &#x5DEE;&#x5206;&#x77E9;&#x9635;</h4>
+<p>&#x8F93;&#x5165;&#x4E00;&#x4E2A; n &#x884C; m &#x5217;&#x7684;&#x6574;&#x6570;&#x77E9;&#x9635;&#xFF0C;&#x518D;&#x8F93;&#x5165; q &#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x6BCF;&#x4E2A;&#x64CD;&#x4F5C;&#x5305;&#x542B;&#x4E94;&#x4E2A;&#x6574;&#x6570; x1,y1,x2,y2,c&#xFF0C;&#x5176;&#x4E2D; (x1,y1) &#x548C; (x2,y2) &#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5B50;&#x77E9;&#x9635;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#x5750;&#x6807;&#x548C;&#x53F3;&#x4E0B;&#x89D2;&#x5750;&#x6807;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x64CD;&#x4F5C;&#x90FD;&#x8981;&#x5C06;&#x9009;&#x4E2D;&#x7684;&#x5B50;&#x77E9;&#x9635;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x503C;&#x52A0;&#x4E0A; c&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3 4 3
+1 2 2 1
+3 2 2 1
+1 1 1 1
+1 1 2 2 1
+1 3 2 3 2
+3 1 3 4 1
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>2 3 4 1
+4 3 4 1
+2 2 2 2
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_225d688716-2.png" alt="2.png"> </p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1010</span>;
+<span class="hljs-keyword">int</span> n,m,q;
+<span class="hljs-keyword">int</span> a[N][N],b[N][N];
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x1,<span class="hljs-keyword">int</span> y1,<span class="hljs-keyword">int</span> x2,<span class="hljs-keyword">int</span> y2,<span class="hljs-keyword">int</span> c)</span>
+</span>{
+    b[x1][y1] += c;
+    b[x2+<span class="hljs-number">1</span>][y1] -= c;
+    b[x1][y2+<span class="hljs-number">1</span>] -= c;
+    b[x2+<span class="hljs-number">1</span>][y2+<span class="hljs-number">1</span>] += c;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;q);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>;j &lt;= m;++j)
+            <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a[i][j]);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>;j &lt;= m;++j)
+            insert(i,j,i,j,a[i][j]);
+
+    <span class="hljs-keyword">while</span>(q -- )
+    {
+        <span class="hljs-keyword">int</span> x1,y1,x2,y2,c;
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d%d%d%d&quot;</span>,&amp;x1,&amp;y1,&amp;x2,&amp;y2,&amp;c);
+        insert(x1,y1,x2,y2,c);
+    }
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)
+    {
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>;j &lt;= m;++j)
+        {
+            b[i][j] += b[i<span class="hljs-number">-1</span>][j] + b[i][j<span class="hljs-number">-1</span>] - b[i<span class="hljs-number">-1</span>][j<span class="hljs-number">-1</span>];
+        }
+    }
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;++i)
+    {
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>;j &lt;= m;++j)
+        {
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,b[i][j]);
+        }
+        <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;&quot;</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>(&#x4E60;&#x9898;&#x8BFE;)
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_83ed2cff17-10.png" alt="10.png"></p>
+<h3 id="&#x53CC;&#x6307;&#x9488;&#x7B97;&#x6CD5;"><a name="&#x53CC;&#x6307;&#x9488;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x53CC;&#x6307;&#x9488;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. &#x53CC;&#x6307;&#x9488;&#x7B97;&#x6CD5;</h3>
+<h4 id="acwing-799-&#x6700;&#x957F;&#x8FDE;&#x7EED;&#x4E0D;&#x91CD;&#x590D;&#x5B50;&#x5E8F;&#x5217;"><a name="acwing-799-&#x6700;&#x957F;&#x8FDE;&#x7EED;&#x4E0D;&#x91CD;&#x590D;&#x5B50;&#x5E8F;&#x5217;" class="anchor-navigation-ex-anchor" href="#acwing-799-&#x6700;&#x957F;&#x8FDE;&#x7EED;&#x4E0D;&#x91CD;&#x590D;&#x5B50;&#x5E8F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 799. &#x6700;&#x957F;&#x8FDE;&#x7EED;&#x4E0D;&#x91CD;&#x590D;&#x5B50;&#x5E8F;&#x5217;</h4>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A; n &#x7684;&#x6574;&#x6570;&#x5E8F;&#x5217;&#xFF0C;&#x8BF7;&#x627E;&#x51FA;&#x6700;&#x957F;&#x7684;&#x4E0D;&#x5305;&#x542B;&#x91CD;&#x590D;&#x7684;&#x6570;&#x7684;&#x8FDE;&#x7EED;&#x533A;&#x95F4;&#xFF0C;&#x8F93;&#x51FA;&#x5B83;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>5
+1 2 2 3 5
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>1 2 2 3 5
+&#x2014;&#x2014;i
+j
+<strong>s[a[j]]--</strong>;  //&#x9664;&#x53BB;1
+<strong>j++;  </strong>      //j&#x53F3;&#x79FB;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> n,a[N],s[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; n;++i)    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a[i]);
+    <span class="hljs-keyword">int</span> res = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>,j = <span class="hljs-number">0</span>;i &lt; n;++i)
+    {
+        s[a[i]] ++;
+        <span class="hljs-keyword">while</span>(j &lt; i &amp;&amp; s[a[i]] &gt; <span class="hljs-number">1</span>) <span class="hljs-comment">//&#x6CE8;&#x610F;&#x662F; s[a[i]] &gt; 1      i</span>
+        {
+            s[a[j]] -- ;            <span class="hljs-comment">//&#x6CE8;&#x610F;&#x662F; s[a[j]]--        j</span>
+            j ++;
+        }
+        res = max(res,i-j+<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-built_in">cout</span>&lt;&lt;res&lt;&lt;<span class="hljs-built_in">endl</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="acwing-800-&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x76EE;&#x6807;&#x548C;"><a name="acwing-800-&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x76EE;&#x6807;&#x548C;" class="anchor-navigation-ex-anchor" href="#acwing-800-&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x76EE;&#x6807;&#x548C;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 800. &#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x76EE;&#x6807;&#x548C;</h4>
+<p>&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x5347;&#x5E8F;&#x6392;&#x5E8F;&#x7684;&#x6709;&#x5E8F;&#x6570;&#x7EC4; A &#x548C; B&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x503C; x&#x3002;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x4ECE; 0 &#x5F00;&#x59CB;&#x3002;&#x6C42;&#x51FA;&#x6EE1;&#x8DB3; A[i]+B[j]=x &#x7684;&#x6570;&#x5BF9; (i,j)&#x3002;&#x6570;&#x636E;&#x4FDD;&#x8BC1;&#x6709;&#x552F;&#x4E00;&#x89E3;&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>4 5 6
+1 2 4 7
+3 4 6 8 9
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>1 1
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> a[N],b[N];
+<span class="hljs-keyword">int</span> n,m,x;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m &gt;&gt; x;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a[i]);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; m; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;b[i]);
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>,j = m<span class="hljs-number">-1</span>;i &lt; n;++i)
+    {
+        <span class="hljs-keyword">while</span>(j &gt;= <span class="hljs-number">0</span> &amp;&amp; a[i]+b[j] &gt; x)  j--;
+        <span class="hljs-keyword">if</span>(j &gt;= <span class="hljs-number">0</span> &amp;&amp; a[i] + b[j] == x)  <span class="hljs-built_in">cout</span> &lt;&lt; i &lt;&lt; <span class="hljs-string">&apos; &apos;</span> &lt;&lt; j &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<hr>
+<p>&#x53CC;&#x6307;&#x9488;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6; <strong>O(n+m)</strong>&#x3002;
+&#x5982;&#x679C;&#x9898;&#x6709;&#x591A;&#x4E2A;&#x7B54;&#x6848;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x53CC;&#x6307;&#x9488;&#xFF0C;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(nm)&#x3002;</p>
+<h4 id="acwing-2816-&#x5224;&#x65AD;&#x5B50;&#x5E8F;&#x5217;"><a name="acwing-2816-&#x5224;&#x65AD;&#x5B50;&#x5E8F;&#x5217;" class="anchor-navigation-ex-anchor" href="#acwing-2816-&#x5224;&#x65AD;&#x5B50;&#x5E8F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 2816. &#x5224;&#x65AD;&#x5B50;&#x5E8F;&#x5217;</h4>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A; n &#x7684;&#x6574;&#x6570;&#x5E8F;&#x5217; a1,a2,&#x2026;,an &#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A; m &#x7684;&#x6574;&#x6570;&#x5E8F;&#x5217; b1,b2,&#x2026;,bm&#x3002;&#x5224;&#x65AD; a &#x5E8F;&#x5217;&#x662F;&#x5426;&#x4E3A; b &#x5E8F;&#x5217;&#x7684;&#x5B50;&#x5E8F;&#x5217;&#x3002;&#x5B50;&#x5E8F;&#x5217;&#x6307;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x9879;&#x6309;&#x539F;&#x6709;&#x6B21;&#x5E8F;&#x6392;&#x5217;&#x800C;&#x5F97;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x4F8B;&#x5982;&#x5E8F;&#x5217; {a1,a3,a5} &#x662F;&#x5E8F;&#x5217; {a1,a2,a3,a4,a5} &#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x5E8F;&#x5217;&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3 5
+1 3 5
+1 2 3 4 5
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>Yes
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">100010</span>;
+<span class="hljs-keyword">int</span> a[N],b[N];
+<span class="hljs-keyword">int</span> n,m;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a[i]);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; m; i ++ )   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;b[i]);
+
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>,j = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(i &lt; n &amp;&amp; j &lt; m)
+    {
+        <span class="hljs-keyword">if</span>(a[i] == b[j])    i++;
+        j++;
+    }
+    <span class="hljs-keyword">if</span>(i == n)  <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;Yes&quot;</span>);
+    <span class="hljs-keyword">else</span>    <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;No&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="&#x4F4D;&#x8FD0;&#x7B97;_1"><a name="&#x4F4D;&#x8FD0;&#x7B97;_1" class="anchor-navigation-ex-anchor" href="#&#x4F4D;&#x8FD0;&#x7B97;_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.7. &#x4F4D;&#x8FD0;&#x7B97;</h3>
+<h4 id="acwing-801-&#x4E8C;&#x8FDB;&#x5236;&#x4E2D;1&#x7684;&#x4E2A;&#x6570;"><a name="acwing-801-&#x4E8C;&#x8FDB;&#x5236;&#x4E2D;1&#x7684;&#x4E2A;&#x6570;" class="anchor-navigation-ex-anchor" href="#acwing-801-&#x4E8C;&#x8FDB;&#x5236;&#x4E2D;1&#x7684;&#x4E2A;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 801. &#x4E8C;&#x8FDB;&#x5236;&#x4E2D;1&#x7684;&#x4E2A;&#x6570;</h4>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A; n &#x7684;&#x6570;&#x5217;&#xFF0C;&#x8BF7;&#x4F60;&#x6C42;&#x51FA;&#x6570;&#x5217;&#x4E2D;&#x6BCF;&#x4E2A;&#x6570;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x4E2D; 1 &#x7684;&#x4E2A;&#x6570;&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>5
+1 2 3 4 5
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>1 1 2 1 2
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>1.&#x6C42; n &#x7B2C; k &#x4F4D;&#x6570;&#x5B57;&#xFF1A;<strong>n&gt;&gt;k&amp;1</strong>
+2.&#x8FD4;&#x56DE; n &#x6700;&#x540E;&#x4E00;&#x4F4D;1&#xFF1A;<strong>lowbit(n) = n &amp; -n</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">lowbit</span><span class="hljs-params">(<span class="hljs-keyword">int</span> &amp;x)</span>
+</span>{
+    <span class="hljs-keyword">return</span> x&amp;(-x);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n;
+    <span class="hljs-built_in">cin</span> &gt;&gt; n;
+    <span class="hljs-keyword">while</span> (n -- )
+    {
+        <span class="hljs-keyword">int</span> x;
+        <span class="hljs-built_in">cin</span> &gt;&gt; x;
+        <span class="hljs-keyword">int</span> res = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">while</span>(x)    x -= lowbit(x),res++;
+        <span class="hljs-built_in">cout</span> &lt;&lt; res &lt;&lt; <span class="hljs-string">&apos; &apos;</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_9e468e514c-112301.png" alt="112301.png"> </p>
+<blockquote>
+<p>10
+for(int k = 3;k &gt;= 0;k--) cout &lt;&lt; (n&gt;&gt;k&amp;1)&lt;&lt;endl;
+1010</p>
+</blockquote>
+<p><strong>lowbit(x)</strong>
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_c803d1274c-112302.png" alt="112302.png">  </p>
+<blockquote>
+<p>0000 0011=3&#xFF0C;&#x5B83;&#x7684;&#x76F8;&#x53CD;&#x6570;&#x4E3A;-3=1000 0011&#xFF0C;&#x4F46;0000 0011 + 1000 0011 != 0000 0000&#x3002;&#x8BA1;&#x7B97;&#x673A;&#x5C31;&#x5F15;&#x5165;&#x4E86;<strong>&#x8865;&#x7801;</strong>&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x76F8;&#x53CD;&#x6570;&#x7684;&#x8868;&#x793A;&#x3002;&#x5C06;&#x4EBA;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x79F0;&#x4E3A;<strong>&#x539F;&#x7801;</strong>&#xFF0C;&#x8BA1;&#x7B97;&#x673A;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x65F6;&#x7528;&#x7684;&#x662F;&#x8865;&#x7801;&#x3002;<strong>&#x6B63;&#x6570;&#x7684;&#x8865;&#x7801;&#x5C31;&#x662F;&#x81EA;&#x5DF1;&#xFF0C;&#x8D1F;&#x6570;&#x7684;&#x8865;&#x7801;&#x4E3A;&#x6309;&#x4F4D;&#x53D6;&#x53CD;&#x52A0;1</strong>&#x3002;
+&#x5BF9;&#x4E8E;1000 0011&#x6765;&#x8BF4;&#xFF0C;&#x82E5;&#x5176;&#x4E3A;&#x539F;&#x7801;&#xFF0C;&#x5219;&#x8868;&#x793A;-3&#xFF1B;&#x82E5;&#x5176;&#x4E3A;&#x8865;&#x7801;&#xFF0C;&#x5219;&#x8868;&#x793A;(-1)<em>2^7 + 1</em>2^1 + 1*2^0 = -125&#x3002;
+&#x5E94;&#x7528;&#xFF1A;&#x6C42;x&#x91CC;&#x9762;1&#x7684;&#x4E2A;&#x6570;&#x3002;</p>
+</blockquote>
+<h3 id="&#x79BB;&#x6563;&#x5316;_1"><a name="&#x79BB;&#x6563;&#x5316;_1" class="anchor-navigation-ex-anchor" href="#&#x79BB;&#x6563;&#x5316;_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.8. &#x79BB;&#x6563;&#x5316;</h3>
+<h4 id="acwing-802-&#x533A;&#x95F4;&#x548C;"><a name="acwing-802-&#x533A;&#x95F4;&#x548C;" class="anchor-navigation-ex-anchor" href="#acwing-802-&#x533A;&#x95F4;&#x548C;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 802. &#x533A;&#x95F4;&#x548C;</h4>
+<p>&#x5047;&#x5B9A;&#x6709;&#x4E00;&#x4E2A;&#x65E0;&#x9650;&#x957F;&#x7684;&#x6570;&#x8F74;&#xFF0C;&#x6570;&#x8F74;&#x4E0A;&#x6BCF;&#x4E2A;&#x5750;&#x6807;&#x4E0A;&#x7684;&#x6570;&#x90FD;&#x662F; 0&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x8FDB;&#x884C; n &#x6B21;&#x64CD;&#x4F5C;&#xFF0C;&#x6BCF;&#x6B21;&#x64CD;&#x4F5C;&#x5C06;&#x67D0;&#x4E00;&#x4F4D;&#x7F6E; x &#x4E0A;&#x7684;&#x6570;&#x52A0; c&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x8FDB;&#x884C; m &#x6B21;&#x8BE2;&#x95EE;&#xFF0C;&#x6BCF;&#x4E2A;&#x8BE2;&#x95EE;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6574;&#x6570; l &#x548C; r&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6C42;&#x51FA;&#x5728;&#x533A;&#x95F4; [l,r] &#x4E4B;&#x95F4;&#x7684;&#x6240;&#x6709;&#x6570;&#x7684;&#x548C;&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3 3
+1 2
+3 6
+7 5
+1 3
+4 6
+7 8
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>8
+0
+5
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p>&#x603B;&#x5171; 2&#xD7;10^9 &#x4E2A;&#x6570;&#xFF0C;&#x4F46;&#x6700;&#x591A;&#x53EA;&#x4F7F;&#x7528; <strong>3&#xD7;10^5</strong>&#x3002;&#x6545;&#x5F00;&#x4E09;&#x5341;&#x4E07;&#xFF1A;
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_33788bee2e-QQ&#x56FE;&#x7247;20211012124535.png" alt="QQ&#x56FE;&#x7247;20211012124535.png"> 
+&#x57FA;&#x672C;&#x505A;&#x6CD5;&#xFF1A;
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_d11cb8bb2e-QQ&#x56FE;&#x7247;20211016120845.png" alt="QQ&#x56FE;&#x7247;20211016120845.png"> </p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">300010</span>;
+<span class="hljs-keyword">int</span> n,m;
+<span class="hljs-keyword">int</span> a[N],s[N];  <span class="hljs-comment">//a[N]&#x4E3A;&#x5B58;&#x7684;&#x6570;&#x3002;s[N]&#x4E3A;&#x524D;&#x7F00;&#x548C;</span>
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;alls;    <span class="hljs-comment">//&#x5B58;&#x7684;&#x6240;&#x6709;&#x8981;&#x79BB;&#x6563;&#x5316;&#x7684;&#x503C;</span>
+
+<span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>&gt; PII;
+<span class="hljs-built_in">vector</span>&lt;PII&gt; add,query;  <span class="hljs-comment">//&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#x3002;&#x6C42;&#x64CD;&#x4F5C;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> <span class="hljs-comment">//&#x7528;&#x4E8E;&#x6C42; x &#x79BB;&#x6563;&#x5316;&#x7684;&#x7ED3;&#x679C;</span>
+</span>{
+    <span class="hljs-keyword">int</span> l = <span class="hljs-number">0</span>,r = alls.size()<span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">while</span>(l &lt; r)
+    {
+        <span class="hljs-keyword">int</span> mid = l+r&gt;&gt;<span class="hljs-number">1</span>;
+        <span class="hljs-keyword">if</span>(alls[mid] &gt;= x)  r = mid;    <span class="hljs-comment">//&gt;=x&#x6700;&#x5C0F;&#x7684;&#x6570;</span>
+        <span class="hljs-keyword">else</span>    l = mid+<span class="hljs-number">1</span>;
+    }
+    <span class="hljs-keyword">return</span> r+<span class="hljs-number">1</span>; <span class="hljs-comment">//&#x6620;&#x5C04;&#x7684;&#x6570;&#x503C;&#x4E3A;&#x4ECE;1&#x5F00;&#x59CB;&#x7684;&#x81EA;&#x7136;&#x6570;&#x3002;&#x65B9;&#x4FBF;&#x524D;&#x7F00;&#x548C;&#x8FD0;&#x7B97; </span>
+    <span class="hljs-comment">//&#x82E5;&#x4E0D;&#x60F3;&#x5199;&#x4E8C;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;lower_board</span>
+    <span class="hljs-comment">//return lower_board(alls.begin(),alls.end(),x) - alls.begin() + 1;</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;
+    <span class="hljs-comment">//&#x5148;&#x628A;&#x6240;&#x6709;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x5148;&#x8BFB;&#x8FDB;&#x6765;&#xFF0C;&#x5C06;&#x5176;&#x4E2D;&#x7528;&#x5230;&#x7684;&#x4E0B;&#x6807;&#x79BB;&#x6563;&#x5316;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )
+    {
+        <span class="hljs-keyword">int</span> x,c;
+        <span class="hljs-built_in">cin</span> &gt;&gt; x &gt;&gt; c;
+        add.push_back({x,c});
+
+        alls.push_back(x);
+    }
+    <span class="hljs-comment">//&#x8BFB;&#x5165;&#x6240;&#x6709;&#x7684;&#x5DE6;&#x53F3;&#x533A;&#x95F4;</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; m;++i)
+    {
+        <span class="hljs-keyword">int</span> l,r;
+        <span class="hljs-built_in">cin</span> &gt;&gt; l &gt;&gt; r; 
+        query.push_back({l,r});
+        <span class="hljs-comment">//&#x533A;&#x95F4;&#x4E24;&#x4E2A;&#x7AEF;&#x70B9;&#x90FD;&#x5E94;&#x8BE5;&#x79BB;&#x6563;&#x5316;</span>
+        alls.push_back(l);
+        alls.push_back(r);
+    }
+    <span class="hljs-comment">//&#x81F3;&#x6B64;&#xFF0C;&#x6240;&#x6709;&#x9700;&#x8981;&#x7528;&#x5230;&#x4E0B;&#x6807;&#x7686;&#x5DF2;&#x5B58;&#x3002;&#x4E0B;&#x4E00;&#x6B65; &#x53BB;&#x91CD;</span>
+    sort(alls.begin(),alls.end());
+    alls.erase(unique(alls.begin(),alls.end()),alls.end());
+
+    <span class="hljs-comment">//&#x5904;&#x7406;&#x63D2;&#x5165;</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> item:add)
+    {
+        <span class="hljs-keyword">int</span> x = find(item.first);
+        a[x] += item.second;    <span class="hljs-comment">//&#x5728;&#x79BB;&#x6563;&#x5316;&#x540E;&#x7684;&#x5750;&#x6807;&#x4F4D;&#x7F6E;&#x4E0A;&#x52A0;&#x4E0A;&#x8981;&#x52A0;&#x7684;&#x6570;</span>
+    }
+
+    <span class="hljs-comment">//&#x9884;&#x5904;&#x7406;&#x524D;&#x7F00;&#x548C;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= alls.size(); i ++ )
+    {
+        s[i] = s[i<span class="hljs-number">-1</span>]+a[i];
+    }
+
+    <span class="hljs-comment">//&#x5904;&#x7406;&#x8BE2;&#x95EE;</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> item:query)
+    {
+        <span class="hljs-keyword">int</span> l = find(item.first),r = find(item.second);
+        <span class="hljs-built_in">cout</span> &lt;&lt; s[r] - s[l<span class="hljs-number">-1</span>] &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>unique&#x7684;&#x5B9E;&#x73B0;&#xFF1A;
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_c6c8d4b22e-4.png" alt="4.png"> 
+&#x53CC;&#x6307;&#x9488;
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_28fd9b262e-5.png" alt="5.png"></p>
+<h3 id="&#x533A;&#x95F4;&#x5408;&#x5E76;_1"><a name="&#x533A;&#x95F4;&#x5408;&#x5E76;_1" class="anchor-navigation-ex-anchor" href="#&#x533A;&#x95F4;&#x5408;&#x5E76;_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.9. &#x533A;&#x95F4;&#x5408;&#x5E76;</h3>
+<h4 id="acwing-803-&#x533A;&#x95F4;&#x5408;&#x5E76;"><a name="acwing-803-&#x533A;&#x95F4;&#x5408;&#x5E76;" class="anchor-navigation-ex-anchor" href="#acwing-803-&#x533A;&#x95F4;&#x5408;&#x5E76;"><i class="fa fa-link" aria-hidden="true"></i></a>AcWing 803. &#x533A;&#x95F4;&#x5408;&#x5E76;</h4>
+<p>&#x7ED9;&#x5B9A; n &#x4E2A;&#x533A;&#x95F4; [li,ri]&#xFF0C;&#x8981;&#x6C42;&#x5408;&#x5E76;&#x6240;&#x6709;&#x6709;&#x4EA4;&#x96C6;&#x7684;&#x533A;&#x95F4;&#x3002;&#x6CE8;&#x610F;&#x5982;&#x679C;&#x5728;&#x7AEF;&#x70B9;&#x5904;&#x76F8;&#x4EA4;&#xFF0C;&#x4E5F;&#x7B97;&#x6709;&#x4EA4;&#x96C6;&#x3002;&#x8F93;&#x51FA;&#x5408;&#x5E76;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x533A;&#x95F4;&#x4E2A;&#x6570;&#x3002;&#x4F8B;&#x5982;&#xFF1A;[1,3] &#x548C; [2,6] &#x53EF;&#x4EE5;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x533A;&#x95F4; [1,6]&#x3002;</p>
+<p><strong>&#x8F93;&#x5165;&#x6837;&#x4F8B;</strong></p>
+<pre><code>5
+1 2
+2 4
+5 6
+7 8
+7 9
+</code></pre><p><strong>&#x8F93;&#x51FA;&#x6837;&#x4F8B;</strong></p>
+<pre><code>3
+</code></pre><p><strong>&#x89E3;&#x6790;</strong></p>
+<p><img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_90945ece2e-1.png" alt="1.png"> 
+<img src="Acwing&#x7B97;&#x6CD5;&#x57FA;&#x7840;&#x8BFE;&#x58F9;/95860_fa7453d62f-2.png" alt="2.png"> 
+pair&#x5728;sort&#x65F6;&#x4F18;&#x5148;&#x5DE6;&#x7AEF;&#x70B9;&#x6392;&#x5E8F;&#xFF0C;&#x518D;&#x53F3;&#x7AEF;&#x70B9;&#x6392;&#x5E8F;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>&gt; PII;
+
+<span class="hljs-built_in">vector</span>&lt;PII&gt;segs;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">merge</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;PII&gt;&amp;segs)</span>
+</span>{
+    <span class="hljs-built_in">vector</span>&lt;PII&gt;res;
+    sort(segs.begin(),segs.end());
+    <span class="hljs-keyword">int</span> st = <span class="hljs-number">-2e9</span>,ed = <span class="hljs-number">-2e9</span>;            <span class="hljs-comment">//&#x8D77;&#x59CB;&#x7EF4;&#x62A4;&#x503C;</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> seg:segs)
+    {
+        <span class="hljs-keyword">if</span>(ed &lt; seg.first)
+        {
+            <span class="hljs-keyword">if</span>(st!=<span class="hljs-number">-2e9</span>)    res.push_back({st,ed});
+            st = seg.first, ed = seg.second;
+        }
+        <span class="hljs-keyword">else</span>    ed = max(ed,seg.second);
+    }
+    <span class="hljs-keyword">if</span>(st!=<span class="hljs-number">-2e9</span>)    res.push_back({st,ed});     <span class="hljs-comment">//&#x52A0;&#x4E0A;&#x6700;&#x540E;&#x4E00;&#x6B21;</span>
+    segs = res;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n;
+    <span class="hljs-built_in">cin</span> &gt;&gt; n;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )
+    {
+        <span class="hljs-keyword">int</span> l,r;
+        <span class="hljs-built_in">cin</span> &gt;&gt; l &gt;&gt; r;
+        segs.push_back({l,r});
+    }
+    merge(segs);
+    <span class="hljs-built_in">cout</span> &lt;&lt; segs.size() &lt;&lt;<span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<p>chapter 1 END&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Acwing 算法基础课 chapter 2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Chapter2 数据结构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter1 基础算法","level":"1.2.1","depth":2,"next":{"title":"Chapter2 数据结构","level":"1.2.2","depth":2,"path":"Acwing 算法基础课 chapter 2.md","ref":"Acwing 算法基础课 chapter 2.md","articles":[]},"previous":{"title":"算法基础课","level":"1.2","depth":1,"url":"https://www.acwing.com/activity/content/11/","ref":"https://www.acwing.com/activity/content/11/","articles":[{"title":"Chapter1 基础算法","level":"1.2.1","depth":2,"path":"Acwing 算法基础课 chapter 1.md","ref":"Acwing 算法基础课 chapter 1.md","articles":[]},{"title":"Chapter2 数据结构","level":"1.2.2","depth":2,"path":"Acwing 算法基础课 chapter 2.md","ref":"Acwing 算法基础课 chapter 2.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","disqus","edit-link","splitter","katex","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/XiaochengYe"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Yexiaocheng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","language":"zh-hans","gitbook":"*","description":"记录"},"file":{"path":"Acwing 算法基础课 chapter 1.md","mtime":"2022-02-28T06:18:03.755Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-28T08:04:44.380Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

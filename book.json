@@ -1,0 +1,46 @@
+{
+	"title" : "Gitbook Use",
+	
+	"author" : "Yexiaocheng",
+	
+	"description" : "记录",
+
+	"language" : "zh-hans",
+	
+	"root": ".",
+	
+	"styles": {
+		"website": "styles/website.css",
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+	},
+	
+	"plugins": [
+		"anchor-navigation-ex",
+		"disqus",
+		"edit-link",
+		"splitter",
+		"katex"
+	],
+	"pluginsConfig": {
+		"anchor-navigation-ex": {
+			"isRewritePageTitle": true,
+			"isShowTocTitleIcon": true,
+			"tocLevel1Icon": "fa fa-hand-o-right",
+			"tocLevel2Icon": "fa fa-hand-o-right",
+			"tocLevel3Icon": "fa fa-hand-o-right"
+		},
+		"disqus": {
+			"shortName": "gitbookuse"
+		},
+		"edit-link": {
+			"base": "https://github.com/XiaochengYe",
+			"label": "Edit This Page"
+		}
+	}
+	
+
+}
+
