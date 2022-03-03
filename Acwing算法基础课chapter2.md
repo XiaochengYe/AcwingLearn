@@ -6,7 +6,7 @@
 
 **数组模拟** 比 **动态分配**链表【struct Node {}; new Node();】 快	
 
-![单链表](Acwing 算法基础课 chapter 2.assets/wpsAFC7.tmp.jpg) 
+![单链表](Acwing算法基础课贰.assets/wpsAFC7.tmp.jpg) 
 
 ```cpp
 // head存储链表头，e[]存储节点的值，ne[]存储节点的next指针，idx表示当前用到了哪个节点
@@ -133,7 +133,9 @@ for (int i = 1; i <= n; i ++ )
 
 常见模型：找出滑动窗口中的最大值/最小值
 
-![](Acwing 算法基础课 chapter 2.assets/1644637721398.png) ![](Acwing 算法基础课 chapter 2.assets/1644637738675.png)
+![单调队列](Acwing算法基础课贰.assets/1644637721398.png)
+
+![单调队列](Acwing算法基础课贰.assets/1644637738675.png)
 
 删除，直到它严格单调。
 
@@ -180,7 +182,7 @@ for (int i = 1, j = 0; i <= n; i ++ )
 
 高效地存储和查找字符串集合的数据结构。
 
-![Trie树](Acwing 算法基础课 chapter 2.assets/1644760589784.png)
+![Trie树](Acwing算法基础课贰.assets/1644760589784.png)
 
 ```cpp
 int son[N][26], cnt[N], idx;
@@ -233,7 +235,7 @@ int query(char *str)
 >
 > 并查集可近似 O(1) 完成上述两个操作。
 
-![基本原理](Acwing 算法基础课 chapter 2.assets/1644832877691.png)
+![基本原理](Acwing算法基础课贰.assets/1644832877691.png)
 
 **基本原理**
 
@@ -249,14 +251,14 @@ int query(char *str)
 
 - 问题3：如何合并两个集合
 
-  ![合并集合](Acwing 算法基础课 chapter 2.assets/1644845624459.png) 
+  ![合并集合](Acwing算法基础课贰.assets/1644845624459.png) 
 
   px 是 x 的集合编号，py 是 y 的集合编号。p[x] = y。
 
 
 > 问题 2 的时间复杂度较高，可进行 **路径压缩**(如图) 或 按值合并(让高度小的树接到高度大的树) 优化。
 >
-> ![路径压缩](Acwing 算法基础课 chapter 2.assets/1644844526239.png)
+> ![路径压缩](Acwing算法基础课贰.assets/1644844526239.png)
 
 
 
@@ -349,7 +351,7 @@ d[find(a)] = distance; // 根据具体问题，初始化find(a)的偏移量
 
 一维数组
 
-![存储](Acwing 算法基础课 chapter 2.assets/1644917137772.png)
+![存储](Acwing算法基础课贰.assets/1644917137772.png)
 
 **操作**
 
@@ -357,7 +359,9 @@ d[find(a)] = distance; // 根据具体问题，初始化find(a)的偏移量
 
   使用场景：某一个值变大了，需要下移。
 
-  ![1644917379969](Acwing 算法基础课 chapter 2.assets/1644917379969.png) ![1644917390859](Acwing 算法基础课 chapter 2.assets/1644917390859.png) 
+  ![1644917379969](Acwing算法基础课贰.assets/1644917379969.png)
+
+  ![1644917390859](Acwing算法基础课贰.assets/1644917390859.png) 
 
 - up(x) {}  往上调
 
@@ -378,7 +382,7 @@ d[find(a)] = distance; // 根据具体问题，初始化find(a)的偏移量
 
 复杂度分析：(以完全二叉树为例)
 
-![O(n)建堆](Acwing 算法基础课 chapter 2.assets/1644933510031.png)
+![O(n)建堆](Acwing算法基础课贰.assets/1644933510031.png)
 
 为什么是 n/4 * 1 + n/8 * 2 +… ？
 
@@ -434,9 +438,63 @@ x ∈ (-10^9^,10^9^)，h(x) ∈ (0,10^5^)
 1. x mod 10^5^  ∈  [0,10^5^]
 2. 冲突问题。
 
-方法
+**方法**
 
 1. 拉链法
+
+    ![拉链法](Acwing算法基础课贰.assets/1646051867837.png)
+
+    操作：
+
+    1. 添加(插入)
+
+       ![插入](Acwing算法基础课贰.assets/1646060882466.png)
+
+    2. 查找
+
+    3. 删除(一般不直接删除)。使用标识符
+
+    关于哈希表长度选取：
+
+    > 比如大部分是偶数，这时候如果HASH数组容量是偶数，容易使原始数据HASH后不会均匀分布。
+    > 比如 2 4 6 8 10 12这6个数，如果对 6 取余 得到 2 4 0 2 4 0 只会得到3种HASH值，冲突会很多
+    > 如果对 7 取余 得到 2 4 6 1 3 5 得到6种HASH值，冲突较小。
+    >
+    > 同样地，如果数据都是3的倍数，而HASH数组容量是3的倍数，HASH后也容易有冲突。
+    >
+    > 用一个质数则会减少冲突的概率。
+
+    选素数操作
+
+    ```cpp
+    #include<bits/stdc++.h>
+    using namespace std;
+    const int N = 100010;
+    int main()
+    {
+        for(int i = 100000;;++i)
+        {
+            bool flag = true;
+            for(int j = 2;j*j <= i;++j)
+            {
+                if(i % j == 0)
+                {
+                    flag = false;
+                    break;
+                }
+            }   
+            if(flag == true)    //质数
+            {
+                cout << i << endl;
+                break;
+            }
+
+        }
+        return 0;
+    }
+    ```
+
+    模板代码：
 
     ```c++
     int h[N], e[N], ne[N], idx;
@@ -465,9 +523,21 @@ x ∈ (-10^9^,10^9^)，h(x) ∈ (0,10^5^)
 
 2. 开放寻址法
 
+    开辟长度应为题目给出的 2~3 倍，质数。
+
+    基本思路：
+
+    ![开放寻址法](Acwing算法基础课贰.assets/1646115363520.png)
+
+    操作：
+
+    1. 添加
+    2. 查找
+    3. 删除(打标志，同上)，可将之归为查找一种
+
     ```c++
     int h[N];
-    // 如果x在哈希表中，返回x的下标；如果x不在哈希表中，返回x应该插入的位置
+    // 如果x在哈希表中存在，返回x的所在的位置(下标)；如果x不在哈希表中，返回x应该插入的位置
     int find(int x)
     {
         int t = (x % N + N) % N;
@@ -483,9 +553,42 @@ x ∈ (-10^9^,10^9^)，h(x) ∈ (0,10^5^)
 
 #### 字符串哈希
 
-核心思想：将字符串看成P进制数，P的经验值是131或13331，取这两个值的冲突概率低
+字符串前缀哈希法：
 
-小技巧：取模的数用2^64，这样直接用unsigned long long存储，溢出的结果就是取模的结果
+1. 先把每一个前缀的哈希值求出来(字符串 --> 数字)。
+
+   1. ==将字符串看成 **P进制** 数。==
+
+   2. 将 P进制 的数转为十进制的数。
+
+      小技巧：
+
+   ![字符串映射](Acwing算法基础课贰.assets/1646119205933.png)
+
+   通过这样的方式，把任何一个字符串映射到从 0 ~ Q - 1 的一个数。
+
+   注意：
+
+   1. 一般情况下不能映射成 0。否则易冲突。   e.g. A 0; AA 0。
+   2. 此类哈希不考虑冲突。  
+      1. P 的经验值是131或13331，取这两个值的冲突概率低；
+      2. 取模的数 Q 用2^64，这样直接用unsigned long long存储，溢出的结果就是取模的结果。
+
+2. 利用前缀哈希算出任意子串哈希
+
+   1. 将 h[L - 1] 往左移若干位，与 h[R] 对齐。
+
+   2. 从 L ~ R 段的哈希值    h[R] - h[L-1] * p^(R-L+1)^
+
+      ![L~R段哈希值](Acwing算法基础课贰.assets/1646154233456.png)
+
+      此处用 unsigned long long 存储，便无需对Q(2^64^)取模，溢出即为取模。
+
+   3. 关于预处理    h[i] = h[i - 1] * p + str[i]
+
+当要 **判断两个字符串是否相等** 的时候可以使用这种方法。
+
+模板代码
 
 ```c++
 typedef unsigned long long ULL;
@@ -504,28 +607,44 @@ ULL get(int l, int r)
 }
 ```
 
+能用KMP者大都可以字符串哈希实现，[4060. 字符串循环节 - AcWing题库](https://www.acwing.com/problem/content/description/4063/) 例外。
+
 
 
 ### STL简介
 
 #### vector
 
-变长数组，倍增思想
+变长数组，倍增思想。
 
-1. size()  返回元素个数
-2. empty()  返回是否为空
+系统为某一程序分配空间时，所需时间与空间大小无关，与申请次数有关。故应减少倍增次数。
+
+1. size() &emsp; 返回元素个数(所有容器都有)
+2. empty() &emsp; 返回是否为空(所有容器都有)
 3. clear()  清空
 4. front()/back()
 5. push_back()/pop_back()
-6. begin()/end()
+6. begin()/end()   (end() 最后一个数的下一个位置)
 7. []
-8. 支持比较运算，按字典序
+8. 支持比较运算，按字典序(首字母)
 
 #### pair<int, int>
 
+存储二元组
+
 1. first, 第一个元素
+
 2. second, 第二个元素
-3. 支持比较运算，以first为第一关键字，以second为第二关键字（字典序）
+
+3. 支持**比较**运算，以 **first** 为第一关键字，以 **second** 为第二关键字（字典序）
+
+4. 赋值
+
+    p = make_pair(10,"abc");
+
+    p = {20,"abc"};
+
+5. 可以嵌套
 
 #### string
 
@@ -534,8 +653,8 @@ ULL get(int l, int r)
 1. szie()/length()  返回字符串长度
 2. empty()
 3. clear()
-4. substr(起始下标，(子串长度))  返回子串
-5. c_str()  返回字符串所在字符数组的起始地址
+4. substr(起始下标(从零开始)，(子串长度))  返回子串
+5. c_str()  返回字符串所在字符数组的起始地址(头指针)
 
 #### queue
 
@@ -547,15 +666,25 @@ ULL get(int l, int r)
 4. front()  返回队头元素
 5. back()  返回队尾元素
 6. pop()  弹出队头元素
+7. **没有**clear
 
 #### priority_queue
 
 优先队列，默认是大根堆
 
 1. push()  插入一个元素
+
 2. top()  返回堆顶元素
+
 3. pop()  弹出堆顶元素
-4. 定义成小根堆的方式：priority_queue<int, vector<int>, greater<int>> q;
+
+4. 定义成 **小根堆** 的方式： 
+
+   `priority_queue<int, vector<int>, greater<int>> q;`
+
+   表示优先队列后面的元素都要大于优先队列前面的元素
+
+5. **没有**clear
 
 #### stack
 
@@ -566,10 +695,11 @@ ULL get(int l, int r)
 3. push()  向栈顶插入一个元素
 4. top()  返回栈顶元素
 5. pop()  弹出栈顶元素
+6. **没有**clear
 
 #### deque
 
-双端队列
+(加强版vector) 双端队列。效率相对低
 
 1. size()
 2. empty()
@@ -590,27 +720,38 @@ ULL get(int l, int r)
 - begin()/end()
 - ++, -- 返回前驱和后继，时间复杂度 O(logn)
 
+multi- ：支持重复元素
+
 1. set/multiset
 
    insert()  插入一个数
-   find()  查找一个数
+   find()  查找一个数  (不存在返回end迭代器)
    count()  返回某一个数的个数
    erase()
 
-   1. 输入是一个数x，删除所有x   O(k + logn)
+   1. 输入是一个数x，删除所有x   O(k + logn)     （k为个数)
    2. 输入一个迭代器，删除这个迭代器
 
-   lower_bound()/upper_bound()
+   **==lower_bound()/upper_bound()==**
 
-   1. lower_bound(x)  返回大于等于x的最小的数的迭代器
-   2. upper_bound(x)  返回大于x的最小的数的迭代器
+   1. lower_bound(x)  返回**大于等于**x的最小的数的迭代器
+
+   2. upper_bound(x)  返回**大于**x的最小的数的迭代器
+
+   3. lower_bound( begin,end,num,greater<type>() ):
+
+      二分查找第一个小于或等于num的数字，找到返回该数字的地址，不存在则返回end。通过返回的地址减去起始地址begin,得到找到数字在数组中的下标。
+
+      upper_bound( begin,end,num,greater<type>() ):
+
+      查找第一个小于num的数字
 
 2. map/multimap
 
    1. insert()  插入的数是一个pair
    2. erase()  输入的参数是pair或者迭代器
    3. find()
-   4. []   时间复杂度是 O(logn)
+   4. []   时间复杂度是 O(logn)      （数组是O(1))
    5. lower_bound()/upper_bound()
 
 #### unordered_set, unordered_map, unordered_multiset, unordered_multimap
@@ -619,13 +760,15 @@ ULL get(int l, int r)
 
 和上面类似，增删改查的时间复杂度是 O(1)。
 
-不支持 lower_bound()/upper_bound()， 迭代器的++，--
+不支持 lower_bound()/upper_bound()，迭代器的++，--
 
 #### bitset
 
 圧位
 
-```c++
+使用情况：bool 存储一个字节，使用压位。能够节省8倍空间。
+
+```cpp
 bitset<10000> s;
 ~, &, |, ^
 >>, <<
@@ -637,7 +780,7 @@ none()  判断是否全为0
 set()  把所有位置成1
 set(k, v)  将第k位变成v
 reset()  把所有位变成0
-flip()  等价于~
+flip()  等价于~(所有位取反)
 flip(k) 把第k位取反
 ```
 
@@ -1171,7 +1314,7 @@ int main()
 
 单调栈应用 —— **Acwing 131. [直方图中最大的矩形](https://www.acwing.com/problem/content/133/)**
 
-![2559_1.jpg](Acwing 算法基础课 chapter 2.assets/19_eac6c46017-2559_1.jpg)
+![直方图](Acwing算法基础课贰.assets/19_eac6c46017-2559_1.jpg)
 
 **输入样例**
 
@@ -1229,7 +1372,7 @@ int main()
 }
 ```
 
-![模拟过程](Acwing 算法基础课 chapter 2.assets/1644674377127.png)
+![模拟过程](Acwing算法基础课贰.assets/1644674377127.png)
 
 
 
@@ -1412,8 +1555,8 @@ int main()
 
 ```
 j = ne[j];————重新开始匹配时，可以把j最多移动多少
-![111804.png](https://cdn.acwing.com/media/article/image/2021/11/18/95860_9b4e5e4a48-111804.png) 
-![111802.png](https://cdn.acwing.com/media/article/image/2021/11/18/95860_86296c8048-111802.png) 
+![KMP](https://cdn.acwing.com/media/article/image/2021/11/18/95860_9b4e5e4a48-111804.png) 
+![KMP](https://cdn.acwing.com/media/article/image/2021/11/18/95860_86296c8048-111802.png) 
 
 时间复杂度是O(n)。以第二个循环的j为例。j最多加m次,最多减m次.O(2m)----->O(m)。
 
@@ -1429,7 +1572,7 @@ j = ne[j];————重新开始匹配时，可以把j最多移动多少
 **法二**
 
 严版KMP字符串匹配算法 [求next数组](https://www.bilibili.com/video/BV16X4y137qw?from=search&seid=16643420370716168727&spm_id_from=333.337.0.0)（单次匹配）
-![111801.png](Acwing 算法基础课 chapter 2.assets/95860_5b7ce5f648-111801.png) 
+![KMP](Acwing算法基础课贰.assets/95860_5b7ce5f648-111801.png) 
 
 ```cpp
 void get_next(String T,int next[])
@@ -1588,13 +1731,13 @@ int main()
 
 2. 使用Trie树  O(31) * n(十万) ≈ nlogn
 
-   ![保存与筛选](Acwing 算法基础课 chapter 2.assets/1645087093192.png)
+   ![保存与筛选](Acwing算法基础课贰.assets/1645087093192.png)
 
    思路：从前往后枚举，先 **插入** 再 **查询** (也可先查询再插入，但开始空要加判断)。
 
    ​	查询：查询 ai 前面和 ai 异或最大的值。
 
-   ![思路](Acwing 算法基础课 chapter 2.assets/1645103981023.png)
+   ![思路](Acwing算法基础课贰.assets/1645103981023.png)
 
 整体代码
 
@@ -1740,7 +1883,7 @@ int main()
 }
 ```
 
-> ![优化过程](Acwing 算法基础课 chapter 2.assets/1644911891583.png)
+> ![优化过程](Acwing算法基础课贰.assets/1644911891583.png)
 >
 > find() 函数 `p[x] = find(p[x])` 在回溯过程中路径压缩优化
 
@@ -1779,7 +1922,7 @@ Yes
 
 > 同一个连通块之意：从 a 可以走到 b ，从 b 可以走到 a。
 
-![所给样例](Acwing 算法基础课 chapter 2.assets/1644911365103.png)
+![所给样例](Acwing算法基础课贰.assets/1644911365103.png)
 
 ```cpp
 #include<bits/stdc++.h>
@@ -1881,23 +2024,23 @@ int main()
 
 样例图示
 
-![样例图示](Acwing 算法基础课 chapter 2.assets/1645199664162.png)
+![样例图示](Acwing算法基础课贰.assets/1645199664162.png)
 
 **思路**：
 
 并查集中，维护每个点到根节点的 **距离** 。将距离分为三大类：
 
-![三类距离](Acwing 算法基础课 chapter 2.assets/1645250329339.png)
+![三类距离](Acwing算法基础课贰.assets/1645250329339.png)
 
 1. 何为距离，即是 `关于代的关系` ，对 **3** 取模以示之。
 
-  ![关于代的关系](Acwing 算法基础课 chapter 2.assets/1645250388289.png)
+  ![关于代的关系](Acwing算法基础课贰.assets/1645250388289.png)
 
 2. 每个点到父节点距离如何维护？
 
    存的时候存其对父节点距离。在做 **路径压缩** 时，将每个点到 **父节点** 的距离更新成对 **根节点** 的距离。
 
-   ![距离维护](Acwing 算法基础课 chapter 2.assets/1645250849185.png)
+   ![距离维护](Acwing算法基础课贰.assets/1645250849185.png)
 
 3. 只需要知道每个点与根的关系，即可判断两个点之间的关系。
 
@@ -1911,7 +2054,7 @@ int main()
 
    **d[i]：第 i 个节点到其父节点距离** [ref：find()函数调用过程](https://www.acwing.com/solution/content/15938/)
 
-   ![find函数](Acwing 算法基础课 chapter 2.assets/41774_bd485030c0-JIE.jpg)
+   ![find函数](Acwing算法基础课贰.assets/41774_bd485030c0-JIE.jpg)
 
 整体代码
 
@@ -2085,7 +2228,7 @@ DM
 
   ph[k] 与 hp[j] ：`第 k 个插入点的对应下标` 与 `堆中下标为j的点对应的k`。(两者如反函数关系)
 
-  ![交换第k个插入数](Acwing 算法基础课 chapter 2.assets/1645004854237.png)
+  ![交换第k个插入数](Acwing算法基础课贰.assets/1645004854237.png)
 
   [如何理解模拟堆中的heap_swap，hp[N\], ph[N]？ - AcWing](https://www.acwing.com/solution/content/5661/)
 
@@ -2155,14 +2298,14 @@ DM
   using namespace std;
   const int N = 100010;
   int h[N],ph[N],hp[N],cnt;
-
+  
   void heap_swap(int a,int b)
   {
       swap(ph[hp[a]],ph[hp[b]]);
       swap(hp[a],hp[b]);
       swap(h[a],h[b]);
   }
-
+  
   void down(int u)
   {
       int t = u;
@@ -2174,7 +2317,7 @@ DM
           down(t);
       }
   }
-
+  
   void up(int u)
   {
       while(u/2 && h[u/2] > h[u])
@@ -2183,7 +2326,7 @@ DM
           u /= 2;
       }
   }
-
+  
   int main()
   {
       int n,m = 0;
@@ -2243,18 +2386,303 @@ DM
 
 #### AcWing 840. [模拟散列表](https://www.acwing.com/problem/content/842/)
 
+维护一个集合，支持如下几种操作：
+
+1. `I x`，插入一个数 x；
+2. Q x，询问数 x 是否在集合中出现过；
+
+现在要进行 N 次操作，对于每个询问操作输出对应的结果。
+
+**输入样例**
+
+```
+5
+I 1
+I 2
+I 3
+Q 2
+Q 5
+```
+
+**输出样例**
+
+```
+Yes
+No
+```
+
+**解析**
+
+1. 拉链法
+
+   ```cpp
+   #include<bits/stdc++.h>
+   using namespace std;
+   const int N = 100003;
+   int h[N],e[N],ne[N],idx;		//此处 e 和 ne 同单链表是一样的
+
+   void insert(int x)
+   {
+       int k = (x % N + N ) % N;
+       e[idx] = x;
+       ne[idx] = h[k];
+       h[k] = idx ++;
+   }
+
+   bool find(int x)
+   {
+       int k = (x % N + N) % N;
+       for(int i = h[k];i != -1;i = ne[i])			
+       //h[k]存的链表第一个节点下标，e[i]为当前点的值；做完操作后，ne[i]为下一个点的下标。空指针的下标为 -1
+       {
+           if(e[i] == x)
+           {
+               return true;
+           }
+       }
+       return false;
+   }
+
+   int main()
+   {
+       int n;
+       scanf("%d", &n);
+       memset(h, -1, sizeof h);
+       while (n -- )
+       {
+           char op[2];
+           int x;
+           scanf("%s%d",op,&x);
+           if(*op == 'I')
+               insert(x);
+           else 
+           {
+               if(find(x)) puts("Yes");
+               else    puts("No");
+           }
+       }
+       return 0;
+   }
+
+   ```
+
+2. 开放寻址法
+
+   ```cpp
+   #include<bits/stdc++.h>
+   using namespace std;
+   const int N = 200003;
+   int h[N],null = 0x3f3f3f3f;		//null 不在 x 范围内的数
+   
+   int find(int x)
+   {
+       int k = (x % N + N) % N;
+       while(h[k] != null && h[k] != x)
+       {
+           k++;
+           if(k == N)  k = 0;
+       }
+       return k;
+   }
+   
+   int main()
+   {
+       memset(h, 0x3f, sizeof h);		//memset函数按字节，h为int，四个字节，每个皆是0x3f(8位)
+       int n;
+       scanf("%d", &n);
+       while (n -- )
+       {
+           char op[2];
+           int x;
+           scanf("%s%d", op, &x);
+           int k = find(x);
+           if(*op == 'I')
+               h[k] = x;
+           else 
+           {
+               if(h[k] != null)  puts("Yes");
+               else    puts("No");
+           }
+       }
+       return 0;
+   }
+   ```
+
 
 
 #### AcWing 841. [字符串哈希](https://www.acwing.com/problem/content/843/)
 
+给定一个长度为 n 的字符串，再给定 m 个询问，每个询问包含四个整数 l1,r1,l2,r2，请你判断 [l1,r1] 和 [l2,r2] 这两个区间所包含的字符串子串是否完全相同。字符串中只包含大小写英文字母和数字。
+
+**输入样例**
+
+```
+8 3
+aabbaabb
+1 3 5 7
+1 3 6 8
+1 2 1 2
+```
+
+**输出样例**
+
+```
+Yes
+No
+Yes
+```
+
+**解析**
+
+p 数组的意义，便是用来存储 p 的次方。因为公式内有 p 的次方，故先将 p 预处理出来。
+
+h 数组：某一个前缀的哈希值。
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+typedef unsigned long long ULL;
+const int N = 100010,P = 131;
+ULL h[N],p[N];
+char str[N];
+
+ULL get(int l,int r)
+{
+    return h[r] - h[l-1] * p[r-l+1];
+}
+
+int main()
+{
+    int n,m;
+    scanf("%d%d", &n, &m);
+    cin >> str + 1;
+
+    p[0] = 1;
+    for(int i = 1;i <= n;++i)
+    {
+        p[i] = p[i-1] * P;
+        h[i] = h[i-1] * P + str[i]; 
+    }
+
+    while (m -- )
+    {
+        int l1,r1,l2,r2;
+        scanf("%d%d%d%d", &l1, &r1,&l2,&r2);
+        if(get(l1,r1) == get(l2,r2))    puts("Yes");
+        else    puts("No");
+    }
+    return 0;
+}
+```
+
+应用：[139. 回文子串的最大长度 - AcWing题库](https://www.acwing.com/problem/content/141/)
+
+**输入样例**
+
+```
+abcbabcbabcba
+abacacbaaaab
+END
+```
+
+**输出样例**
+
+```
+Case 1: 13
+Case 2: 6
+```
+
+**解析**
+
+![回文子串的最大长度](Acwing算法基础课贰.assets/1646209987825.png)
+
+前期步骤同上，而后
+
+- 长度是奇数
+
+1. 枚举中点；
+
+2. 二分半径。
+
+   每次二分一个长度，判断左右两边的哈希值是否一样。若同，扩长度；否，缩。
+
+- 长度是偶数
+
+		在每一个字母之间插入符号 ，将其化为奇数。
+
+下标的计算
+
+![逆序下标转换](Acwing算法基础课贰.assets/1646213451004.png)
 
 
 
+```cpp
+//hl 正序字符串所有前缀的哈希值；hr 逆序字符串所有前缀的哈希值。
+//逗号表达式返回值为最后一式的值。
+
+#include<bits/stdc++.h>
+using namespace std;
+const int N = 2000010,P = 131;
+typedef unsigned long long ULL;
+ULL hl[N],hr[N],p[N];
+char s[N];
+
+ULL get(ULL h[],int l,int r)
+{
+    return h[r] - h[l-1]*p[r-l+1];
+}
+
+int main()
+{
+    int t = 1;
+    while(cin >> s+1 , strcmp(s+1,"END"))
+    {
+        int n = strlen(s+1);                    
+        //size_t strlen(const char *str)
+        //从str开始到第一个'\0'为止的字符串的长度，长度不包括'\0'
+        for(int i = n*2;i > 0;i -= 2)
+        {
+            s[i] = s[i/2];
+            s[i-1] = '#';
+        }
+        n *= 2;
+        //1 2 3 4 5 6 7 8 9 10
+        //a b c b a
+        //# a # b # c # b # a
+
+        p[0] = 1;
+        for(int i = 1,j = n;i <= n,j > 0;++i,--j)
+        {
+            hl[i] = hl[i-1]*P + s[i];
+            hr[i] = hr[i-1]*P + s[j];
+            p[i] = p[i-1]*P;
+        }
+
+        int res = 0;
+        //求以s[i]为对称中心的回文串的最大半径。 二分回文串的半径
+        //mid为回文串半径[...]S[i][...]  -->  [长度mid][长度1][长度mid]  -->  s[i-mid]...s[i-1] s[i] s[i+1]...s[i+mid]
+        for(int i = 2;i <= n;++i)           //扩容后的字符串起始下标应为 2
+        {
+            int l = 0,r = min(i-2,n-i);
+            while(l < r)
+            {
+                int mid = l + r + 1 >> 1;                               //注意 + 1
+                if(get(hl,i-mid,i-1) == get(hr,n-(i+mid)+1,n-(i+1)+1)) l = mid;     //回文串半径可以变大
+                else    r = mid - 1;
+            }
+            //s[i-l]...s[i-1] s[i] s[i+1]...s[i+l]
+            //回文串总长度2*l+1=l+1+l
+            if(s[i-l] == '#')   res = max(res,l);   //回文串两边为'#'，即字母比'#'少一个
+            else    res = max(res,l+1);             //回文串两边为字母，即字母比'#'多一个
+        }
+
+        printf("Case %d: %d\n",t++,res);
+    }
+    return 0;
+}
+
+```
 
 
 
-
-
-
-
-chapter 2 END。
+chapter 2 END。	
