@@ -7,8 +7,6 @@
 
 	"language" : "zh-hans",
 	
-	"root": ".",
-	
 	"styles": {
 		"website": "styles/website.css",
 		"ebook": "styles/ebook.css",
@@ -36,7 +34,7 @@
 			"shortName": "gitbookuse"
 		},
 		"edit-link": {
-			"base": "https://github.com/XiaochengYe",
+			"base": "https://github.com/XiaochengYe/AcwingLearn/blob/main",
 			"label": "Edit This Page"
 		}
 	}
