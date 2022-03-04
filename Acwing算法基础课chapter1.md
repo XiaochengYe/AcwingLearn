@@ -149,7 +149,7 @@ double bsearch_3(double l, double r)
 
 ![](Acwing算法基础课壹/2335982-20211231225625411-1680669889.png)
 
-![](https://img2020.cnblogs.com/blog/2335982/202112/2335982-20211231225745947-1294263317.png)
+![](F:\Notes\Gitbook_acw\Acwing算法基础课壹\2335982-20211231225745947-1294263317.png)
 
 // C = A + B, A >= 0, B >= 0
 
