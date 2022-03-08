@@ -1,7 +1,6 @@
 # Introduction
 
-Learn From Acwing.
+Learn record.
 
 by XC
 
-2021.7.19 - 
